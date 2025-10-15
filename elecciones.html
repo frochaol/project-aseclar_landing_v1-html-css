@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Conoce a ASECLAR - Asociación de Exalumnos Claretianos de Arequipa">
-    <meta name="keywords" content="exalumnos, asociación, claretianos, nosotros, visión, misión">
+    <meta name="description" content="ASECLAR - Elecciones">
+    <meta name="keywords" content="exalumnos, asociación, elecciones">
     <meta name="author" content="ASECLAR">
-    <title>Nosotros - ASECLAR</title>
+    <title>Elecciones - ASECLAR</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="elecciones-styles.css">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <meta name="theme-color" content="#ffffff">
 </head>
@@ -23,7 +24,7 @@
                     <a href="elecciones.html" class="nav-link">Elecciones</a>
                 </li>
                 <li class="nav-item">
-                    <a href="index.html#campeonatos" class="nav-link">Campeonatos</a>
+                    <a href="#campeonatos" class="nav-link">Campeonatos</a>
                 </li>
             </ul>
 
@@ -37,13 +38,13 @@
             <!-- Menús derecha (desktop/tablet) -->
             <ul class="nav-menu nav-right">
                 <li class="nav-item">
-                    <a href="index.html#proyectos" class="nav-link">Proyectos</a>
+                    <a href="#proyectos" class="nav-link">Proyectos</a>
                 </li>
                 <li class="nav-item">
-                    <a href="index.html#comunidad" class="nav-link">Comunidad</a>
+                    <a href="#comunidad" class="nav-link">Comunidad</a>
                 </li>
                 <li class="nav-item">
-                    <a href="index.html#estatutos" class="nav-link">Estatutos</a>
+                    <a href="#estatutos" class="nav-link">Estatutos</a>
                 </li>
             </ul>
 
@@ -65,100 +66,139 @@
                     <a href="elecciones.html" class="mobile-nav-link">Elecciones</a>
                 </li>
                 <li class="mobile-nav-item">
-                    <a href="index.html#campeonatos" class="mobile-nav-link">Campeonatos</a>
+                    <a href="#campeonatos" class="mobile-nav-link">Campeonatos</a>
                 </li>
                 <li class="mobile-nav-item">
-                    <a href="index.html#proyectos" class="mobile-nav-link">Proyectos</a>
+                    <a href="#proyectos" class="mobile-nav-link">Proyectos</a>
                 </li>
                 <li class="mobile-nav-item">
-                    <a href="index.html#comunidad" class="mobile-nav-link">Comunidad</a>
+                    <a href="#comunidad" class="mobile-nav-link">Comunidad</a>
                 </li>
                 <li class="mobile-nav-item">
-                    <a href="index.html#estatutos" class="mobile-nav-link">Estatutos</a>
+                    <a href="#estatutos" class="mobile-nav-link">Estatutos</a>
                 </li>
             </ul>
         </div>
     </header>
 
     <main class="main-content">
-        <!-- Sección Nosotros -->
-        <section id="nosotros" class="about-us">
-            <div class="about-us-container">
-                <!-- Quiénes Somos -->
-                <div class="about-intro">
-                    <h2>Quiénes Somos</h2>
-                    <p>La Asociación de Exalumnos Claretianos de Arequipa es un espacio de encuentro y confraternidad para aquellos que compartieron la experiencia de estudiar en el Colegio Claretiano. Nuestra asociación busca fortalecer los lazos de amistad y solidaridad entre sus miembros, y promover el crecimiento personal y colectivo a través de actividades y proyectos que reflejen los valores Claretianos.</p>
-                </div>
+        <!-- Hero Section -->
+        <section class="elections-hero">
+            <div class="elections-hero-content">
+                <h1>Elecciones ASECLAR 2025</h1>
+                <p>Conoce a los partidos y sus propuestas para el futuro de nuestra asociación</p>
+            </div>
+        </section>
 
-                <!-- Visión y Misión -->
-                <div class="about-vm-grid">
-                    <div class="about-vm-card">
-                        <div class="about-vm-icon">
-                            <svg viewBox="0 0 24 24" width="32" height="32">
-                                <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" fill="currentColor"/>
+        <!-- Partidos Section -->
+        <section class="parties-section">
+            <div class="parties-container">
+                <!-- Partido 1: Alianza Democrática -->
+                <article class="party-card">
+                    <div class="party-header">
+                        <div class="party-logo">
+                            <svg viewBox="0 0 24 24" width="48" height="48">
+                                <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5zm0 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm0-10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z" fill="currentColor"/>
                             </svg>
                         </div>
-                        <h3>Visión</h3>
-                        <p>Ser un referente de unión y confraternidad entre los exalumnos Claretianos de Arequipa, promoviendo el crecimiento personal y colectivo, y contribuyendo al desarrollo de nuestra sociedad a través de la filosofía y valores Claretianos.</p>
+                        <h2 class="party-name">Partido Alianza Democrática</h2>
+                        <p class="party-acronym">PAD</p>
                     </div>
 
-                    <div class="about-vm-card">
-                        <div class="about-vm-icon">
-                            <svg viewBox="0 0 24 24" width="32" height="32">
-                                <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z" fill="currentColor"/>
+                    <div class="party-body">
+                        <div class="party-presentation">
+                            <h3>Presentación</h3>
+                            <p>Propuesta sólida, participativa y visionaria para el fortalecimiento de la comunidad de exalumnos. Promovemos la unidad, el deporte, la confraternidad y el desarrollo institucional sostenible mediante programas organizados y beneficios para todos los miembros.</p>
+                        </div>
+
+                        <div class="party-members">
+                            <h3>Lista de Candidatos</h3>
+                            <ul class="members-list">
+                                <li class="member-item">
+                                    <span class="member-role">Presidente</span>
+                                    <span class="member-name">Huisa Figueroa Alejandro Claudio</span>
+                                </li>
+                                <li class="member-item">
+                                    <span class="member-role">Sub-presidente</span>
+                                    <span class="member-name">Ojeda Portugal Joseph</span>
+                                </li>
+                                <li class="member-item">
+                                    <span class="member-role">Secretario</span>
+                                    <span class="member-name">Fernández Peixoto David</span>
+                                </li>
+                                <li class="member-item">
+                                    <span class="member-role">Tesorero</span>
+                                    <span class="member-name">Pinto Torres Ronald</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="party-footer">
+                        <a href="https://drive.google.com/uc?export=download&id=1dclUj2P3lRSlHmcHxoF9FR1pdNNh1C1s" class="party-button" download>Descargar Propuestas Completas</a>
+                    </div>
+                </article>
+
+                <!-- Partido 2: Exalumnos Claretianos por el Cambio -->
+                <article class="party-card">
+                    <div class="party-header">
+                        <div class="party-logo">
+                            <svg viewBox="0 0 24 24" width="48" height="48">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
                             </svg>
                         </div>
-                        <h3>Misión</h3>
-                        <p>Unir a los exalumnos Claretianos de Arequipa en un espacio de confraternidad y crecimiento, fomentando la formación integral, la solidaridad y el compromiso con nuestra sociedad, a través de actividades y proyectos que promuevan la excelencia y la innovación.</p>
+                        <h2 class="party-name">Exalumnos Claretianos por el Cambio</h2>
+                        <p class="party-acronym">ECC</p>
                     </div>
-                </div>
 
-                <!-- Valores Claretianos -->
-                <div class="about-values">
-                    <h3>Nuestros Valores Claretianos</h3>
-                    <div class="about-values-grid">
-                        <div class="about-value-item">
-                            <div class="about-value-icon">
-                                <svg viewBox="0 0 24 24" width="24" height="24">
-                                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="currentColor"/>
-                                </svg>
-                            </div>
-                            <h4>Amor a Dios y al prójimo</h4>
+                    <div class="party-body">
+                        <div class="party-presentation">
+                            <h3>Presentación</h3>
+                            <p>Movimiento comprometido con mantener vivo el legado claretiano. Unidos por la convicción de renovar y proyectar hacia el futuro, fortalecemos la hermandad entre promociones e impulsamos actividades que integren a toda la comunidad claretiana promoviendo valores de liderazgo, solidaridad y servicio.</p>
                         </div>
 
-                        <div class="about-value-item">
-                            <div class="about-value-icon">
-                                <svg viewBox="0 0 24 24" width="24" height="24">
-                                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" fill="currentColor"/>
-                                </svg>
-                            </div>
-                            <h4>Respeto a la dignidad humana</h4>
-                        </div>
-
-                        <div class="about-value-item">
-                            <div class="about-value-icon">
-                                <svg viewBox="0 0 24 24" width="24" height="24">
-                                    <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" fill="currentColor"/>
-                                </svg>
-                            </div>
-                            <h4>Solidaridad y compromiso con la justicia</h4>
-                        </div>
-
-                        <div class="about-value-item">
-                            <div class="about-value-icon">
-                                <svg viewBox="0 0 24 24" width="24" height="24">
-                                    <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z" fill="currentColor"/>
-                                </svg>
-                            </div>
-                            <h4>Excelencia e innovación en la educación</h4>
+                        <div class="party-members">
+                            <h3>Lista de Candidatos</h3>
+                            <ul class="members-list">
+                                <li class="member-item">
+                                    <span class="member-role">Presidente</span>
+                                    <span class="member-name">Jean Pierre Paris Miranda Urruchi</span>
+                                </li>
+                                <li class="member-item">
+                                    <span class="member-role">Vicepresidente</span>
+                                    <span class="member-name">Enrique Victor Luna Delgado</span>
+                                </li>
+                                <li class="member-item">
+                                    <span class="member-role">Tesorero</span>
+                                    <span class="member-name">Edson Omar Cervantes Ponce</span>
+                                </li>
+                                <li class="member-item">
+                                    <span class="member-role">Vocal 1</span>
+                                    <span class="member-name">Flavio Alexandre Velazco Vallejos</span>
+                                </li>
+                                <li class="member-item">
+                                    <span class="member-role">Vocal 2</span>
+                                    <span class="member-name">Richard Andre Revilla Marroquín</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                </div>
 
-                <!-- Llamado a la acción -->
-                <div class="about-cta">
-                    <p>Nuestra asociación está abierta a todos los exalumnos Claretianos de Arequipa que compartan nuestra visión y misión, y estén dispuestos a trabajar juntos para construir un futuro mejor para nuestra sociedad.</p>
-                    <a href="index.html#comunidad" class="about-cta-button">Únete a Nuestra Comunidad</a>
+                    <div class="party-footer">
+                        <a href="https://drive.google.com/uc?export=download&id=1CHoxtiz0GFA3caGh3qefsU8SA8y3UOo_" class="party-button" download>Descargar Propuestas Completas</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="elections-cta">
+            <div class="elections-cta-container">
+                <h2>Tu Voto es Importante</h2>
+                <p>Participa en el proceso democrático de nuestra asociación. Conoce las propuestas, reflexiona y ejerce tu derecho al voto.</p>
+                <div class="cta-buttons">
+                    <a href="#registro" class="cta-button primary">Registrarse para Votar</a>
+                    <a href="#info" class="cta-button secondary">Más Información</a>
                 </div>
             </div>
         </section>
@@ -185,19 +225,19 @@
                         <h4 class="footer-nav-title">Navegación</h4>
                         <ul class="footer-nav-list">
                             <li><a href="index.html" class="footer-nav-link">Inicio</a></li>
-                            <li><a href="index.html#eventos" class="footer-nav-link">Eventos</a></li>
-                            <li><a href="index.html#noticias" class="footer-nav-link">Noticias</a></li>
-                            <li><a href="index.html#comunidad" class="footer-nav-link">Comunidad</a></li>
+                            <li><a href="#eventos" class="footer-nav-link">Eventos</a></li>
+                            <li><a href="#noticias" class="footer-nav-link">Noticias</a></li>
+                            <li><a href="#comunidad" class="footer-nav-link">Comunidad</a></li>
                         </ul>
                     </div>
 
                     <div class="footer-nav-column">
                         <h4 class="footer-nav-title">Participación</h4>
                         <ul class="footer-nav-list">
-                            <li><a href="index.html#proyectos" class="footer-nav-link">Proyectos</a></li>
-                            <li><a href="index.html#campeonatos" class="footer-nav-link">Campeonatos</a></li>
-                            <li><a href="index.html#elecciones" class="footer-nav-link">Elecciones</a></li>
-                            <li><a href="index.html#estatutos" class="footer-nav-link">Estatutos</a></li>
+                            <li><a href="#proyectos" class="footer-nav-link">Proyectos</a></li>
+                            <li><a href="#campeonatos" class="footer-nav-link">Campeonatos</a></li>
+                            <li><a href="elecciones.html" class="footer-nav-link">Elecciones</a></li>
+                            <li><a href="#estatutos" class="footer-nav-link">Estatutos</a></li>
                         </ul>
                     </div>
 
@@ -251,7 +291,8 @@
             <!-- Información del desarrollador -->
             <div class="footer-developer">
                 <div class="developer-content">
-                    <p class="developer-text">Sitio desarrollado por <a href="https://github.com/tu-usuario" target="_blank" class="developer-link">contacto@frochaol.com</a>
+                    <p class="developer-text">Sitio desarrollado 
+                        por <a href="https://github.com/tu-usuario" target="_blank" class="developer-link">contacto@frochaol.com</a>
                     </p>
                 </div>
             </div>

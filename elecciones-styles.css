@@ -1,0 +1,715 @@
+/* Estilos específicos para la página de Elecciones */
+
+/* Hero Section */
+.elections-hero {
+    min-height: 40vh;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 4rem 2rem;
+    border-bottom: 4px solid var(--accent-gold);
+}
+
+.elections-hero-content {
+    text-align: center;
+    max-width: 800px;
+    color: var(--white);
+    animation: fadeInUp 1s ease-out;
+}
+
+.elections-hero h1 {
+    font-family: var(--title-font);
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--white);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.elections-hero p {
+    font-family: var(--body-font);
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.7;
+}
+
+/* Sección de Partidos */
+.parties-section {
+    padding: 6rem 2rem;
+    background-color: var(--neutral-light);
+}
+
+.parties-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    align-items: start;
+}
+
+/* Card del Partido */
+.party-card {
+    background-color: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    border: 2px solid transparent;
+    animation: fadeInUp 1s ease-out 0.3s both;
+    display: flex;
+    flex-direction: column;
+}
+
+.party-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 60px rgba(139, 30, 34, 0.15);
+    border-color: var(--accent-gold);
+}
+
+/* Header del Partido */
+.party-header {
+    background-color: var(--primary-color);
+    padding: 2.5rem 2rem;
+    text-align: center;
+    position: relative;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.party-logo {
+    width: 80px;
+    height: 80px;
+    background-color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.2rem;
+    color: var(--primary-color);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+    flex-shrink: 0;
+}
+
+.party-card:hover .party-logo {
+    transform: scale(1.1) rotate(360deg);
+    background-color: var(--accent-gold);
+}
+
+.party-logo svg {
+    width: 44px;
+    height: 44px;
+}
+
+.party-name {
+    font-family: var(--title-font);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+    max-width: 100%;
+}
+
+.party-acronym {
+    font-family: var(--body-font);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--accent-gold);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* Body del Partido */
+.party-body {
+    padding: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.party-presentation {
+    margin-bottom: 2rem;
+    min-height: 150px;
+}
+
+.party-presentation h3 {
+    font-family: var(--title-font);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.party-presentation h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent-gold);
+    border-radius: 2px;
+}
+
+.party-presentation p {
+    font-family: var(--body-font);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--neutral-dark);
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+/* Miembros del Partido */
+.party-members {
+    margin-top: auto;
+}
+
+.party-members h3 {
+    font-family: var(--title-font);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1.2rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.party-members h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent-gold);
+    border-radius: 2px;
+}
+
+.members-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.member-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 1rem;
+    background-color: var(--neutral-light);
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-gold);
+    transition: var(--transition);
+}
+
+.member-item:hover {
+    background-color: rgba(209, 163, 63, 0.1);
+    border-left-color: var(--primary-color);
+    transform: translateX(5px);
+}
+
+.member-role {
+    font-family: var(--body-font);
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--accent-gold);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.member-name {
+    font-family: var(--body-font);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    line-height: 1.3;
+}
+
+/* Footer del Partido */
+.party-footer {
+    padding: 0 2rem 2rem;
+}
+
+.party-button {
+    width: 100%;
+    padding: 1.1rem 1.5rem;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: 2px solid var(--secondary-color);
+    border-radius: 12px;
+    font-family: var(--body-font);
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 0 4px 15px rgba(27, 44, 76, 0.2);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.party-button:hover {
+    background-color: var(--accent-gold);
+    border-color: var(--accent-gold);
+    color: var(--neutral-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(209, 163, 63, 0.3);
+}
+
+/* Call to Action */
+.elections-cta {
+    padding: 5rem 2rem;
+    background-color: var(--white);
+    position: relative;
+}
+
+.elections-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: var(--primary-color);
+}
+
+.elections-cta-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.elections-cta h2 {
+    font-family: var(--title-font);
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.elections-cta p {
+    font-family: var(--body-font);
+    font-size: 1.15rem;
+    color: var(--neutral-dark);
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1.1rem 2.5rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-family: var(--body-font);
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.cta-button.primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+    box-shadow: 0 8px 25px rgba(139, 30, 34, 0.3);
+}
+
+.cta-button.primary:hover {
+    background-color: var(--dark-red);
+    border-color: var(--dark-red);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(139, 30, 34, 0.4);
+}
+
+.cta-button.secondary {
+    background-color: transparent;
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.cta-button.secondary:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(27, 44, 76, 0.3);
+}
+
+/* Responsive - Tablet (1024px - 769px) */
+@media (max-width: 1024px) {
+    .parties-container {
+        gap: 2.5rem;
+        max-width: 950px;
+    }
+    
+    .party-header {
+        min-height: 200px;
+        padding: 2rem 1.8rem;
+    }
+    
+    .party-name {
+        font-size: 1.6rem;
+    }
+    
+    .party-body {
+        padding: 1.8rem;
+    }
+    
+    .party-presentation {
+        min-height: 140px;
+    }
+    
+    .elections-cta h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Responsive - Tablet Pequeña (768px) */
+@media (max-width: 768px) {
+    .elections-hero {
+        min-height: 35vh;
+        padding: 3rem 1.5rem;
+    }
+    
+    .elections-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .elections-hero p {
+        font-size: 1.1rem;
+    }
+    
+    .parties-section {
+        padding: 4rem 1.5rem;
+    }
+    
+    .parties-container {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+    
+    .party-header {
+        min-height: auto;
+        padding: 2rem 1.5rem;
+    }
+    
+    .party-logo {
+        width: 75px;
+        height: 75px;
+        margin-bottom: 1rem;
+    }
+    
+    .party-logo svg {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .party-name {
+        font-size: 1.5rem;
+    }
+    
+    .party-acronym {
+        font-size: 0.95rem;
+        letter-spacing: 2px;
+    }
+    
+    .party-body {
+        padding: 1.8rem;
+    }
+    
+    .party-presentation {
+        margin-bottom: 1.8rem;
+        min-height: auto;
+    }
+    
+    .party-presentation h3,
+    .party-members h3 {
+        font-size: 1.3rem;
+    }
+    
+    .party-presentation p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+    
+    .members-list {
+        gap: 0.8rem;
+    }
+    
+    .member-item {
+        padding: 0.9rem;
+    }
+    
+    .party-footer {
+        padding: 0 1.8rem 1.8rem;
+    }
+    
+    .elections-cta {
+        padding: 4rem 1.5rem;
+    }
+    
+    .elections-cta h2 {
+        font-size: 2.3rem;
+    }
+    
+    .elections-cta p {
+        font-size: 1.05rem;
+        margin-bottom: 2rem;
+    }
+    
+    .cta-buttons {
+        gap: 1.2rem;
+    }
+    
+    .cta-button {
+        padding: 1rem 2rem;
+        font-size: 0.95rem;
+    }
+}
+
+/* Responsive - Mobile (640px) */
+@media (max-width: 640px) {
+    .elections-hero {
+        min-height: 30vh;
+        padding: 2.5rem 1.2rem;
+    }
+    
+    .elections-hero h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .elections-hero p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    .parties-section {
+        padding: 3rem 1.2rem;
+    }
+    
+    .parties-container {
+        gap: 2rem;
+    }
+    
+    .party-header {
+        padding: 1.8rem 1.2rem;
+    }
+    
+    .party-logo {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 1rem;
+    }
+    
+    .party-logo svg {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .party-name {
+        font-size: 1.35rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .party-acronym {
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+    }
+    
+    .party-body {
+        padding: 1.5rem;
+    }
+    
+    .party-presentation {
+        margin-bottom: 1.5rem;
+    }
+    
+    .party-presentation h3,
+    .party-members h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.9rem;
+    }
+    
+    .party-presentation h3::after,
+    .party-members h3::after {
+        width: 50px;
+        height: 2.5px;
+    }
+    
+    .party-presentation p {
+        font-size: 0.92rem;
+        line-height: 1.65;
+    }
+    
+    .members-list {
+        gap: 0.7rem;
+    }
+    
+    .member-item {
+        padding: 0.85rem;
+    }
+    
+    .member-role {
+        font-size: 0.75rem;
+    }
+    
+    .member-name {
+        font-size: 0.95rem;
+    }
+    
+    .party-footer {
+        padding: 0 1.5rem 1.5rem;
+    }
+    
+    .party-button {
+        padding: 1rem 1.2rem;
+        font-size: 0.88rem;
+    }
+    
+    .elections-cta {
+        padding: 3rem 1.2rem;
+    }
+    
+    .elections-cta h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .elections-cta p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .cta-button {
+        padding: 1rem 2rem;
+        font-size: 0.9rem;
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+/* Responsive - Pantallas Muy Pequeñas (480px) */
+@media (max-width: 480px) {
+    .elections-hero {
+        padding: 2rem 1rem;
+    }
+    
+    .elections-hero h1 {
+        font-size: 1.75rem;
+    }
+    
+    .elections-hero p {
+        font-size: 0.95rem;
+    }
+    
+    .parties-section {
+        padding: 2.5rem 1rem;
+    }
+    
+    .party-header {
+        padding: 1.5rem 1rem;
+    }
+    
+    .party-logo {
+        width: 65px;
+        height: 65px;
+    }
+    
+    .party-logo svg {
+        width: 34px;
+        height: 34px;
+    }
+    
+    .party-name {
+        font-size: 1.25rem;
+    }
+    
+    .party-acronym {
+        font-size: 0.85rem;
+        letter-spacing: 1.5px;
+    }
+    
+    .party-body {
+        padding: 1.2rem;
+    }
+    
+    .party-presentation h3,
+    .party-members h3 {
+        font-size: 1.1rem;
+    }
+    
+    .party-presentation p {
+        font-size: 0.88rem;
+        line-height: 1.6;
+    }
+    
+    .member-item {
+        padding: 0.75rem;
+    }
+    
+    .member-role {
+        font-size: 0.7rem;
+    }
+    
+    .member-name {
+        font-size: 0.9rem;
+    }
+    
+    .party-footer {
+        padding: 0 1.2rem 1.2rem;
+    }
+    
+    .party-button {
+        padding: 0.9rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .elections-cta {
+        padding: 2.5rem 1rem;
+    }
+    
+    .elections-cta h2 {
+        font-size: 1.8rem;
+    }
+    
+    .elections-cta p {
+        font-size: 0.95rem;
+    }
+    
+    .cta-button {
+        padding: 0.9rem 1.8rem;
+        font-size: 0.88rem;
+        max-width: 280px;
+    }
+}
