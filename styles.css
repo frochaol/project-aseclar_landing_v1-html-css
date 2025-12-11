@@ -104,18 +104,6 @@ body {
     filter: drop-shadow(0 8px 25px rgba(0, 0, 0, 0.25));
 }
 
-.logo-text {
-    font-size: 1.8rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: var(--primary-color);
-    transition: var(--transition);
-}
-
-.logo-text:hover {
-    color: var(--accent-color);
-}
-
 /* Menús Desktop/Tablet */
 .nav-menu {
     display: flex;
@@ -280,56 +268,6 @@ body {
     padding-top: 0; /* Eliminar padding para que no haya gap */
 }
 
-.hero {
-    padding: 5rem 2rem;
-    text-align: center;
-    background: linear-gradient(135deg, var(--neutral-light), var(--white));
-    border-bottom: 4px solid var(--accent-gold);
-}
-
-.hero h1 {
-    font-family: var(--title-font); /* Playfair Display */
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    color: var(--title-color); /* Rojo Claretiano */
-    animation: fadeInUp 1s ease-out;
-    letter-spacing: -0.5px;
-}
-
-.hero p {
-    font-family: var(--body-font);
-    font-size: 1.3rem;
-    color: var(--text-color); /* Gris Sacerdotal */
-    animation: fadeInUp 1s ease-out 0.3s both;
-    max-width: 600px;
-    margin: 0 auto 2rem;
-    line-height: 1.7;
-}
-
-/* Botón principal hero */
-.hero-button {
-    display: inline-block;
-    background-color: var (--button-bg); /* Rojo Claretiano */
-    color: var(--white);
-    padding: 1rem 2.5rem;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 1.1rem;
-    transition: var(--transition);
-    border: 2px solid var(--button-bg);
-    letter-spacing: 0.5px;
-    animation: fadeInUp 1s ease-out 0.6s both;
-}
-
-.hero-button:hover {
-    background-color: var(--button-hover); /* Rojo Oscuro Fuego */
-    border-color: var(--button-hover);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(139, 30, 34, 0.3);
-}
-
 /* Sección de Bienvenida */
 .welcome {
     min-height: 50vh; /* Reducir de 70vh a 50vh */
@@ -337,22 +275,6 @@ body {
         rgba(27, 44, 76, 0.7), /* Overlay azul marino con transparencia */
         rgba(139, 30, 34, 0.6)  /* Overlay rojo claretiano con transparencia */
     ), url('assets/heros/pexels-pixabay-209728.jpg');
-    background-size: cover;
-    background-position: center 35%; /* Ajustar posición vertical para desktop */
-    background-attachment: scroll;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    padding: 3rem 2rem; /* Reducir de 4rem a 3rem */
-}
-
-.welcome-us {
-    min-height: 50vh; /* Reducir de 70vh a 50vh */
-    background-image: linear-gradient(
-        rgba(27, 44, 76, 0.7), /* Overlay azul marino con transparencia */
-        rgba(139, 30, 34, 0.6)  /* Overlay rojo claretiano con transparencia */
-    ), url('assets/heros/nosotros.jpg') !important;
     background-size: cover;
     background-position: center 35%; /* Ajustar posición vertical para desktop */
     background-attachment: scroll;
@@ -2218,19 +2140,6 @@ a:hover {
         padding-top: 0; /* Eliminar padding para que no haya gap */
     }
     
-    .hero h1 {
-        font-size: 2.8rem;
-    }
-    
-    .hero p {
-        font-size: 1.1rem;
-    }
-    
-    .hero-button {
-        padding: 0.9rem 2rem;
-        font-size: 1rem;
-    }
-
     /* Sección de Bienvenida - Tablet */
     .welcome {
         min-height: 40vh; /* Reducir de 60vh a 40vh */
@@ -2459,14 +2368,6 @@ a:hover {
         padding-top: 0; /* Eliminar padding para que no haya gap */
     }
     
-    .hero h1 {
-        font-size: 2rem;
-    }
-    
-    .hero p {
-        font-size: 1rem;
-    }
-
     /* Sección de Bienvenida - Mobile */
     .welcome {
         min-height: 35vh; /* Reducir de 50vh a 35vh */
@@ -2703,10 +2604,6 @@ a:hover {
     .main-content {
         margin-top: 80px; /* Ajustar para nueva altura */
         padding-top: 0; /* Eliminar padding para que no haya gap */
-    }
-    
-    .hero {
-        padding: 2rem 1rem;
     }
     
     .mobile-nav-link {
