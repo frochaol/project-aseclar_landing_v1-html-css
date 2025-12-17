@@ -322,7 +322,7 @@ body {
     border-radius: 50px;
     font-weight: 700;
     font-size: 1.2rem;
-    transition: var (--transition);
+    transition: var(--transition);
     border: 3px solid var(--accent-gold);
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -1079,7 +1079,7 @@ body {
 }
 
 .events-subtitle {
-    font-family: var (--body-font);
+    font-family: var(--body-font);
     font-size: 1.2rem;
     color: var(--neutral-dark);
     margin-bottom: 4rem;
