@@ -1,4 +1,4 @@
-# 🏛️ ASECLAR - Sitio Web Oficial
+# 🏛️ ASECLARET - Sitio Web Oficial
 
 > Sitio web oficial de la Asociación de Exalumnos Claretianos de Arequipa
 
@@ -11,17 +11,17 @@
 
 ## 📖 Sobre el Proyecto
 
-**ASECLAR** es el sitio web oficial de la **Asociación de Exalumnos Claretianos de Arequipa**, diseñado para reconectar a los exalumnos del colegio Claretiano y mantenerlos informados sobre las actividades de la asociación.
+**ASECLARET** es el sitio web oficial de la **Asociación de Ex Claretianos de Arequipa**, diseñado para reconectar a los ex claretianos del colegio Claretiano y mantenerlos informados sobre las actividades de la asociación.
 
 ### 🎯 Propósito
 
 El sitio tiene como objetivo principal:
 
-- 🤝 **Reconectar** a los exalumnos claretianos de Arequipa
+- 🤝 **Reconectar** a los ex claretianos de Arequipa
 - 📅 **Informar** sobre eventos, campeonatos y actividades
 - 🗳️ **Facilitar** procesos democráticos como elecciones
 - 📢 **Difundir** la misión y proyectos institucionales
-- 🌐 **Crear comunidad** entre los exalumnos y mantener vivo el espíritu claretiano
+- 🌐 **Crear comunidad** entre los ex claretianos y mantener vivo el espíritu claretiano
 
 ---
 
@@ -83,7 +83,7 @@ project-aseclar_landing_v1-html-css/
 Página de inicio con hero section, presentación de la asociación, eventos destacados y llamadas a la acción.
 
 ### ℹ️ **nosotros.html** - Información Institucional
-Historia, misión, visión y valores de ASECLAR. Presenta la identidad de la asociación.
+Historia, misión, visión y valores de ASECLARET. Presenta la identidad de la asociación.
 
 ### 🗳️ **elecciones.html** - Resultados Electorales
 Página especial con gráficos animados y resultados de las elecciones de la junta directiva.
@@ -95,7 +95,7 @@ Información sobre campeonatos deportivos organizados por la asociación.
 Descripción de los proyectos sociales y comunitarios de la asociación.
 
 ### 👥 **comunidad.html** - Comunidad
-Espacio para conectar con otros exalumnos y compartir experiencias.
+Espacio para conectar con otros ex claretianos y compartir experiencias.
 
 ### 📜 **estatutos.html** - Estatutos y Normativas
 Documentos oficiales que rigen el funcionamiento de la asociación.
@@ -265,15 +265,15 @@ Las contribuciones son bienvenidas y apreciadas. Para contribuir:
 - Email: [contacto@frochaol.com](mailto:contacto@frochaol.com)
 - Web: [frochaol.com](https://frochaol.com)
 
-Desarrollado con ❤️ para la comunidad de exalumnos claretianos de Arequipa.
+Desarrollado con ❤️ para la comunidad de ex claretianos de Arequipa.
 
 ---
 
 ## 📄 Licencia
 
-Este proyecto fue desarrollado para la **Asociación de Exalumnos Claretianos de Arequipa (ASECLAR)**.
+Este proyecto fue desarrollado para la **Asociación de Ex Claretianos de Arequipa (ASECLARET)**.
 
-**Derechos reservados** © 2024 ASECLAR - Asociación de Exalumnos Claretianos de Arequipa
+**Derechos reservados** © 2024 ASECLARET - Asociación de Ex Claretianos de Arequipa
 
 Para uso, reproducción o modificación de este código, por favor contactar con la asociación o el autor.
 
@@ -282,8 +282,8 @@ Para uso, reproducción o modificación de este código, por favor contactar con
 ## 🙏 Agradecimientos
 
 - 🏫 Al **Colegio Claretiano de Arequipa** por formar generaciones de exalumnos
-- 👥 A la **Junta Directiva de ASECLAR** por su liderazgo
-- 🎓 A todos los **exalumnos claretianos** que mantienen viva la comunidad
+- 👥 A la **Junta Directiva de ASECLARET** por su liderazgo
+- 🎓 A todos los **ex claretianos** que mantienen viva la comunidad
 - ⛪ A los **Misioneros Claretianos** por su labor educativa
 
 ---
@@ -292,7 +292,7 @@ Para uso, reproducción o modificación de este código, por favor contactar con
 
 ### 🌟 Si este proyecto te fue útil, considera darle una estrella ⭐
 
-**ASECLAR - Unidos por la tradición Claretiana**
+**ASECLARET - Unidos por la tradición Claretiana**
 
 [🏠 Inicio](index.html) • [ℹ️ Nosotros](nosotros.html) • [🗳️ Elecciones](elecciones.html) • [👥 Comunidad](comunidad.html)
 
