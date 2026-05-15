@@ -129,3 +129,41 @@ document.addEventListener('touchend', function (event) {
     }
     lastTouchEnd = now;
 }, false);
+
+// Funciones para el Video Modal
+function openVideoModal(videoSrc) {
+    const modal = document.getElementById('videoModal');
+    const videoPlayer = document.getElementById('modalVideoPlayer');
+    
+    videoPlayer.src = videoSrc;
+    modal.style.display = 'flex';
+    
+    // Pequeño delay para permitir que el display flex se aplique antes de la opacidad (para transición)
+    setTimeout(() => {
+        modal.style.opacity = '1';
+    }, 10);
+    
+    videoPlayer.play();
+}
+
+function closeVideoModal() {
+    const modal = document.getElementById('videoModal');
+    const videoPlayer = document.getElementById('modalVideoPlayer');
+    
+    modal.style.opacity = '0';
+    
+    // Esperar a que termine la transición para ocultarlo completamente
+    setTimeout(() => {
+        modal.style.display = 'none';
+        videoPlayer.pause();
+        videoPlayer.currentTime = 0;
+    }, 300);
+}
+
+// Cerrar modal al hacer clic fuera del video
+document.addEventListener('click', function(event) {
+    const modal = document.getElementById('videoModal');
+    if (event.target === modal) {
+        closeVideoModal();
+    }
+});
