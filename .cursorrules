@@ -1,0 +1,164 @@
+# ASECLARET project rules for AI assistants
+
+## Project context
+
+This repository is the official static website for ASECLARET, the Asociacion de Ex Claretianos de Arequipa. The site reconnects former Claretian students, publishes institutional news, events, elections, community activities, projects, statutes, and association updates.
+
+The product is intentionally simple: plain HTML, plain CSS, and plain JavaScript. Preserve this lightweight approach unless the user explicitly asks for a larger architectural change.
+
+## Tech stack
+
+- HTML5 static pages.
+- CSS3 with custom properties in `styles.css`.
+- Vanilla JavaScript in `script.js`.
+- No framework, bundler, package manager, backend, database, or build step.
+- External font import lives in `styles.css` via Google Fonts.
+
+## Main files
+
+- `index.html`: home page with welcome section, official announcements, videos, news/cards, and calls to action.
+- `nosotros.html`: institutional page with identity, mission, vision, and values.
+- `elecciones.html`: election results page. It uses both `styles.css` and `elecciones-styles.css`.
+- `campeonatos.html`, `proyectos.html`, `comunidad.html`, `estatutos.html`: static secondary pages, currently simpler/in-progress content.
+- `styles.css`: global styles, visual identity, layout, header, mobile menu, sections, cards, footer, responsive rules.
+- `elecciones-styles.css`: styles only for `elecciones.html`.
+- `script.js`: shared client-side behavior.
+- `assets/`: local images and videos. Use existing assets when possible and keep paths relative, for example `assets/exal.png`.
+- `README.md` and `DOCUMENTACION.md`: project documentation and current architecture overview.
+
+## Visual identity
+
+Preserve the Claretian institutional palette defined in `:root` inside `styles.css`:
+
+- `--primary-color: #8B1E22`
+- `--secondary-color: #1B2C4C`
+- `--accent-gold: #D1A33F`
+- `--neutral-dark: #3A3A3A`
+- `--neutral-light: #E8E2D0`
+- `--dark-red: #6E1015`
+- `--white: #FFFFFF`
+
+Typography:
+
+- Titles use `--title-font`, currently Playfair Display.
+- Body text uses `--body-font`, currently Open Sans.
+
+Design tone:
+
+- Institutional, warm, community-oriented, and formal.
+- Spanish is the primary user-facing language.
+- Keep wording clear, respectful, and oriented to ex students and association members.
+
+## HTML conventions
+
+- Keep pages as complete static HTML documents with `<!DOCTYPE html>` and `<html lang="es">`.
+- Keep the shared header/nav structure consistent across all pages.
+- Header structure depends on:
+  - `.header`
+  - `.navbar`
+  - `.nav-menu.nav-left`
+  - `.nav-menu.nav-right`
+  - `.logo`
+  - `.hamburger#hamburger`
+  - `.mobile-menu#mobile-menu`
+  - `.mobile-nav-link`
+- If adding or renaming a top-level page, update all desktop nav links, mobile nav links, and footer links across the HTML files.
+- Keep the logo linked to `index.html` and use `assets/exal.png` unless the brand asset changes.
+- Keep `script.js` loaded near the end of `<body>` on pages that use the shared header/menu.
+- Prefer semantic HTML: `header`, `nav`, `main`, `section`, `footer`, lists for navigation, headings in logical order.
+- Add meaningful `alt` text for images.
+- For external links, use `target="_blank"` together with `rel="noopener noreferrer"`.
+- Avoid adding backend-only behavior, forms that imply persistence, or fake functionality unless the user asks for it.
+
+## CSS conventions
+
+- Prefer editing `styles.css` for shared styles.
+- Use `elecciones-styles.css` only for election-page-specific components.
+- Reuse existing variables, spacing, typography, shadows, hover styles, and responsive patterns.
+- Prefer class-based CSS over new inline styles. Existing inline styles exist mainly in `index.html`; do not expand that pattern unless the change is very small or explicitly temporary.
+- Keep new selectors scoped to the page or component being changed to avoid accidental global regressions.
+- Maintain the fixed header behavior and leave enough top spacing for content that appears below it.
+- Responsive breakpoints already used include `1024px`, `900px`, `768px`, `640px`, and `480px`. Follow these patterns before inventing new breakpoints.
+- Respect `@media (prefers-reduced-motion: reduce)` behavior when adding animations.
+
+## JavaScript conventions
+
+- `script.js` handles shared UI only:
+  - mobile hamburger menu open/close,
+  - closing with link click, outside click, and Escape,
+  - smooth scrolling for hash links,
+  - fixed header `.scrolled` state,
+  - active nav link based on visible section,
+  - mobile double-tap zoom prevention,
+  - video modal helpers used by `index.html`.
+- Keep JavaScript vanilla and small.
+- If changing the header or mobile menu markup, make sure the IDs/classes expected by `script.js` still exist.
+- Guard new DOM logic when elements may not exist on every page.
+- Avoid adding large dependencies or client-side frameworks.
+
+## Assets
+
+- Use local files from `assets/` when possible.
+- Keep filenames and paths exact; some existing asset names contain spaces.
+- Optimize new large images/videos before adding them when practical.
+- Prefer descriptive file names for new assets.
+- Do not remove or rename assets unless all references are updated.
+
+## Accessibility and UX
+
+- Preserve keyboard usability for menus and modals.
+- Keep contrast high on the institutional colors.
+- Ensure text remains readable on mobile.
+- Use descriptive link text and accessible labels for icon-only links.
+- Do not make content overlap the fixed header.
+- Test narrow mobile widths when changing header, cards, grids, or footer.
+
+## Local run and verification
+
+There is no build step. To review changes:
+
+- Open `index.html` directly in a browser, or
+- Run a simple static server, for example `python3 -m http.server 8000`, then open `http://localhost:8000`.
+
+When making UI changes, manually check:
+
+- desktop layout,
+- tablet/mobile layout,
+- hamburger menu behavior,
+- footer consistency,
+- links between pages,
+- media paths for images/videos,
+- console errors in the browser when possible.
+
+## Common tasks
+
+When adding a new page:
+
+1. Copy the structure from an existing page.
+2. Keep the shared header and footer.
+3. Link `styles.css`.
+4. Add a page-specific CSS file only if the styles are substantial and unique.
+5. Add the page to desktop nav, mobile nav, and footer if it is a top-level section.
+6. Add or reuse assets under `assets/`.
+
+When adding a new section to `index.html`:
+
+1. Reuse existing section/card/button patterns where possible.
+2. Prefer class-based CSS in `styles.css`.
+3. Keep copy concise and in Spanish.
+4. Check responsive behavior at `768px`, `640px`, and `480px`.
+
+When updating elections:
+
+1. Keep election-specific layout in `elecciones-styles.css`.
+2. Verify totals, percentages, labels, and dates for consistency.
+3. Keep public-facing wording neutral and institutional.
+
+## Avoid
+
+- Do not convert the project to React, Vue, Next, Tailwind, Sass, or a bundled setup unless explicitly requested.
+- Do not introduce npm dependencies for small UI behavior.
+- Do not move shared styles out of `styles.css` without a clear reason.
+- Do not break the duplicated but intentionally consistent header/footer pattern across pages.
+- Do not add placeholder promises such as working forms, accounts, payments, or dashboards unless they are actually implemented.
+- Do not remove commented historical content unless the user asks for cleanup.
