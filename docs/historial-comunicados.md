@@ -1,6 +1,25 @@
 # Historial de Comunicados
 
-Aquí se registran los comunicados oficiales previos que han sido retirados de la sección principal de la página de inicio, ordenados en orden cronológico inverso (el más reciente al principio).
+Aquí se registran los comunicados oficiales de la asociación, ordenados en orden cronológico inverso (el más reciente al principio).
+
+---
+
+## 2026-08-22 - Resumen de la Reunión de Delegados: Segundo Campeonato de Fútbol ASECLARET 2026
+**Etiqueta:** Comunicado Oficial
+
+Estimados delegados, capitanes y comunidad claretiana:
+
+Compartimos los acuerdos y disposiciones oficiales aprobados en la reunión presencial de delegados del pasado **22 de agosto de 2026** para el desarrollo del **Segundo Campeonato de Fútbol ASECLARET 2026**, cuya inauguración y desfile oficial se llevarán a cabo el **sábado 5 de septiembre a la 1:00 p.m.**
+
+En este documento se precisan los criterios sobre entrega de nóminas de jugadores (plazo hasta el **25 de agosto**), arbitraje, normas de convivencia y participación de asociados. Ponemos a su disposición el informe oficial completo para su descarga y lectura.
+
+Atentamente,
+
+**ASECLARET**  
+¡Trabajando para todos!
+
+**Documento adjunto:**
+- [Informe_reunion_ASECLARET_22_agosto_2026.pdf](file:///Users/fernando/Documents/2-Trabajo/ASECLAR/project-aseclar_landing_v1-html-css/assets/descargables/Informe_reunion_ASECLARET_22_agosto_2026.pdf)
 
 ---
 

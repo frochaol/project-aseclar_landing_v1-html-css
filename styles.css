@@ -1256,6 +1256,9 @@ body {
 .announcement-container {
     max-width: 1100px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
 }
 
 .announcement-badge {
@@ -1612,6 +1615,146 @@ body {
     transform: translateY(-2px);
 }
 
+/* Card de Documento Descargable */
+.announcement-doc-card {
+    flex: 0 0 360px;
+    max-width: 100%;
+    background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+    border-radius: 18px;
+    padding: 1.8rem;
+    color: var(--white);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.25);
+    border: 1.5px solid rgba(209, 163, 63, 0.35);
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.announcement-doc-card::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, rgba(209, 163, 63, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.announcement-doc-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(15, 23, 42, 0.35);
+    border-color: var(--accent-gold);
+}
+
+.doc-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.doc-type-icon {
+    width: 52px;
+    height: 52px;
+    background: rgba(209, 163, 63, 0.15);
+    border: 1.5px solid rgba(209, 163, 63, 0.4);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-gold);
+}
+
+.doc-badge-pill {
+    background: rgba(209, 163, 63, 0.2);
+    border: 1px solid rgba(209, 163, 63, 0.5);
+    color: var(--accent-gold);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.3rem 0.75rem;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.doc-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.doc-card-title {
+    font-family: var(--title-font);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.35;
+}
+
+.doc-card-subtitle {
+    font-family: var(--body-font);
+    font-size: 0.88rem;
+    color: #cbd5e1;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.doc-card-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    margin-top: 0.5rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.doc-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.82rem;
+    color: #94a3b8;
+}
+
+.doc-meta-item svg {
+    color: var(--accent-gold);
+}
+
+.doc-card-footer {
+    margin-top: auto;
+    padding-top: 0.5rem;
+}
+
+.doc-download-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    width: 100%;
+    background: linear-gradient(135deg, var(--accent-gold), #b88a28);
+    color: #0f172a;
+    padding: 0.75rem 1rem;
+    border-radius: 50px;
+    font-family: var(--body-font);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 14px rgba(209, 163, 63, 0.3);
+}
+
+.doc-download-action:hover {
+    background: linear-gradient(135deg, #dfb44f, var(--accent-gold));
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(209, 163, 63, 0.5);
+    color: #0f172a;
+}
+
 /* Responsive Noticia Importante - Tablet */
 @media (max-width: 1024px) {
     .important-announcement {
@@ -1638,7 +1781,8 @@ body {
         margin: 0 auto;
     }
 
-    .announcement-media-card {
+    .announcement-media-card,
+    .announcement-doc-card {
         flex: none;
         width: 100%;
         max-width: 440px;
@@ -1685,7 +1829,8 @@ body {
         gap: 0.5rem;
     }
 
-    .announcement-media-card {
+    .announcement-media-card,
+    .announcement-doc-card {
         max-width: 380px;
     }
 }
