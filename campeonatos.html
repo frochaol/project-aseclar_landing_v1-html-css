@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Campeonatos - ASECLARET">
-    <meta name="keywords" content="campeonatos, deportes, ex claretianos, claretianos">
+    <meta name="description" content="Segundo Campeonato de Fulbito ASECLARET 2026 - Fixture Fecha 1 y Categorías Oficiales">
+    <meta name="keywords" content="campeonatos, fixture fecha 1, fulbito, deportes, ex claretianos, aseclaret 2026">
     <meta name="author" content="ASECLARET">
-    <title>Campeonatos - ASECLARET</title>
+    <title>Campeonato 2026 - ASECLARET</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="campeonatos-styles.css">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#1B2C4C">
 </head>
 <body>
+    <!-- Header compartido con navbar institucional -->
     <header class="header">
         <nav class="navbar">
             <!-- Menús izquierda (desktop/tablet) -->
@@ -23,7 +25,7 @@
                     <a href="elecciones.html" class="nav-link">Elecciones</a>
                 </li>
                 <li class="nav-item">
-                    <a href="campeonatos.html" class="nav-link">Campeonatos</a>
+                    <a href="campeonatos.html" class="nav-link active" style="color: var(--accent-gold);">Campeonatos</a>
                 </li>
             </ul>
 
@@ -48,7 +50,7 @@
             </ul>
 
             <!-- Botón hamburguesa (mobile) -->
-            <div class="hamburger" id="hamburger">
+            <div class="hamburger" id="hamburger" aria-label="Abrir menú de navegación">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -65,7 +67,7 @@
                     <a href="elecciones.html" class="mobile-nav-link">Elecciones</a>
                 </li>
                 <li class="mobile-nav-item">
-                    <a href="campeonatos.html" class="mobile-nav-link">Campeonatos</a>
+                    <a href="campeonatos.html" class="mobile-nav-link" style="color: var(--accent-gold); font-weight: 700;">Campeonatos</a>
                 </li>
                 <li class="mobile-nav-item">
                     <a href="proyectos.html" class="mobile-nav-link">Proyectos</a>
@@ -81,25 +83,830 @@
     </header>
 
     <main class="main-content">
-        <!-- Sección En Construcción -->
-        <section class="under-construction">
-            <div class="construction-container">
-                <div class="construction-icon">
-                    <svg viewBox="0 0 24 24" width="80" height="80">
-                        <path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" fill="currentColor"/>
+        <!-- Hero Section -->
+        <section class="champ-hero">
+            <div class="champ-hero-container">
+                <div class="champ-badge-pill">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
                     </svg>
+                    <span>Segundo Campeonato de Fulbito • ASECLARET 2026</span>
                 </div>
-                <h1>Página en Construcción</h1>
-                <p class="construction-description">Estamos trabajando para traerte información completa sobre nuestros campeonatos y eventos deportivos. Pronto podrás encontrar aquí calendarios, resultados y cómo participar.</p>
-                <div class="construction-actions">
-                    <a href="index.html" class="construction-button primary">Volver al Inicio</a>
-                    <a href="https://www.facebook.com/aseclar.aqp" target="_blank" rel="noopener noreferrer" class="construction-button secondary">Síguenos en Facebook</a>
+
+                <h1>Campeonato Oficial ASECLARET 2026</h1>
+
+                <p class="champ-hero-subtitle">
+                    ¡La fiesta deportiva claretiana ya comenzó! <strong>Inauguración Oficial: Sábado 5 de Setiembre a las 12:50 P.M. en Mi Barrunto</strong>. Consulta el rol de partidos de la Fecha 1, las categorías y descarga los afiches oficiales.
+                </p>
+
+                <div class="champ-hero-actions">
+                    <a href="#fixture" class="btn-champ btn-champ-gold">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                        </svg>
+                        <span>Ver Fixture Fecha 1</span>
+                    </a>
+
+                    <a href="#categorias" class="btn-champ btn-champ-outline">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                        </svg>
+                        <span>Categorías Oficiales</span>
+                    </a>
+
+                    <a href="estatutos.html" class="btn-champ btn-champ-outline">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 2 2h18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+                        </svg>
+                        <span>Reglamento y Estatutos</span>
+                    </a>
                 </div>
+            </div>
+        </section>
+
+        <!-- Tarjetas de Resumen Rápido -->
+        <section class="champ-summary-section">
+            <div class="champ-container">
+                <div class="champ-cards-grid">
+                    <div class="champ-summary-card">
+                        <div class="champ-card-icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <span class="champ-card-tag">Inauguración Oficial</span>
+                        <h3>12:50 P.M. • Mi Barrunto</h3>
+                        <p>Desfile inaugural de todas las promociones debidamente uniformadas. ¡Participa con tu delegación!</p>
+                    </div>
+
+                    <div class="champ-summary-card">
+                        <div class="champ-card-icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                                <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                            </svg>
+                        </div>
+                        <span class="champ-card-tag">Fecha 1 • 5 de Setiembre</span>
+                        <h3>15 Encuentros en Simultáneo</h3>
+                        <p>Partidos continuos desde las 2:00 P.M. hasta las 9:15 P.M. en Cancha 1 y Cancha 2.</p>
+                    </div>
+
+                    <div class="champ-summary-card">
+                        <div class="champ-card-icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                            </svg>
+                        </div>
+                        <span class="champ-card-tag">Estructura del Torneo</span>
+                        <h3>5 Categorías Oficiales</h3>
+                        <p>Veteranos, Máster, Senior (A y B), Libre (A y B) y Benjamines (A y B) compitiendo por la copa 2026.</p>
+                    </div>
+
+                    <div class="champ-summary-card">
+                        <div class="champ-card-icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </div>
+                        <span class="champ-card-tag">Espíritu Claretiano</span>
+                        <h3>Fair Play & Camaradería</h3>
+                        <p>Reencuentro de generaciones claretianas con tolerancia cero a la agresión y juego limpio.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN FIXTURE INTERACTIVO FECHA 1 -->
+        <section class="fixture-section" id="fixture">
+            <div class="champ-container">
+                <div class="section-header-champ">
+                    <span class="section-tag">Programación de Partidos</span>
+                    <h2>Fixture Oficial: Fecha 1 (Sábado 5 de Setiembre)</h2>
+                    <p>Revisa los horarios y canchas asignadas para cada partido de la jornada inaugural en el complejo Mi Barrunto.</p>
+                </div>
+
+                <!-- Tabs de Filtro de Partidos -->
+                <div class="fixture-filter-tabs">
+                    <button type="button" class="filter-tab-btn active" data-filter="all">Todos los Partidos (15)</button>
+                    <button type="button" class="filter-tab-btn" data-filter="cancha-1">Cancha 1</button>
+                    <button type="button" class="filter-tab-btn" data-filter="cancha-2">Cancha 2</button>
+                    <button type="button" class="filter-tab-btn" data-filter="veteranos">Veteranos</button>
+                    <button type="button" class="filter-tab-btn" data-filter="master">Máster</button>
+                    <button type="button" class="filter-tab-btn" data-filter="senior">Senior</button>
+                    <button type="button" class="filter-tab-btn" data-filter="libre">Libre</button>
+                    <button type="button" class="filter-tab-btn" data-filter="benjamines">Benjamines</button>
+                </div>
+
+                <!-- Grid de Tarjetas de Partidos -->
+                <div class="matches-grid" id="matchesGrid">
+                    
+                    <!-- 2:00 PM | Cancha 1 -->
+                    <div class="match-card" data-cancha="cancha-1" data-cat="veteranos">
+                        <div class="match-header">
+                            <span class="match-time">2:00 P.M.</span>
+                            <span class="match-cancha cancha-1">Cancha 1</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="team-box">
+                                <span class="team-promo">1979</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                            <div class="vs-badge">VS</div>
+                            <div class="team-box">
+                                <span class="team-promo">1980</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">
+                            <span class="match-cat-tag cat-veteranos">Veteranos</span>
+                            <span class="match-date-badge">Sáb 5 Set</span>
+                        </div>
+                    </div>
+
+                    <!-- 2:00 PM | Cancha 2 -->
+                    <div class="match-card" data-cancha="cancha-2" data-cat="senior">
+                        <div class="match-header">
+                            <span class="match-time">2:00 P.M.</span>
+                            <span class="match-cancha cancha-2">Cancha 2</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="team-box">
+                                <span class="team-promo">1997</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                            <div class="vs-badge">VS</div>
+                            <div class="team-box">
+                                <span class="team-promo">1993</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">
+                            <span class="match-cat-tag cat-senior">Senior</span>
+                            <span class="match-date-badge">Sáb 5 Set</span>
+                        </div>
+                    </div>
+
+                    <!-- 2:55 PM | Cancha 1 -->
+                    <div class="match-card" data-cancha="cancha-1" data-cat="senior">
+                        <div class="match-header">
+                            <span class="match-time">2:55 P.M.</span>
+                            <span class="match-cancha cancha-1">Cancha 1</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="team-box">
+                                <span class="team-promo">1991</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                            <div class="vs-badge">VS</div>
+                            <div class="team-box">
+                                <span class="team-promo">1998</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">
+                            <span class="match-cat-tag cat-senior">Senior</span>
+                            <span class="match-date-badge">Sáb 5 Set</span>
+                        </div>
+                    </div>
+
+                    <!-- 2:55 PM | Cancha 2 -->
+                    <div class="match-card" data-cancha="cancha-2" data-cat="benjamines">
+                        <div class="match-header">
+                            <span class="match-time">2:55 P.M.</span>
+                            <span class="match-cancha cancha-2">Cancha 2</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="team-box">
+                                <span class="team-promo">2010</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                            <div class="vs-badge">VS</div>
+                            <div class="team-box">
+                                <span class="team-promo">2014</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">
+                            <span class="match-cat-tag cat-benjamines">Benjamines A</span>
+                            <span class="match-date-badge">Sáb 5 Set</span>
+                        </div>
+                    </div>
+
+                    <!-- 3:50 PM | Cancha 1 -->
+                    <div class="match-card" data-cancha="cancha-1" data-cat="libre">
+                        <div class="match-header">
+                            <span class="match-time">3:50 P.M.</span>
+                            <span class="match-cancha cancha-1">Cancha 1</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="team-box">
+                                <span class="team-promo">2000</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                            <div class="vs-badge">VS</div>
+                            <div class="team-box">
+                                <span class="team-promo">2002</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">
+                            <span class="match-cat-tag cat-libre">Libre A</span>
+                            <span class="match-date-badge">Sáb 5 Set</span>
+                        </div>
+                    </div>
+
+                    <!-- 3:50 PM | Cancha 2 -->
+                    <div class="match-card" data-cancha="cancha-2" data-cat="master">
+                        <div class="match-header">
+                            <span class="match-time">3:50 P.M.</span>
+                            <span class="match-cancha cancha-2">Cancha 2</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="team-box">
+                                <span class="team-promo">1984</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                            <div class="vs-badge">VS</div>
+                            <div class="team-box">
+                                <span class="team-promo">1990</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">
+                            <span class="match-cat-tag cat-master">Máster</span>
+                            <span class="match-date-badge">Sáb 5 Set</span>
+                        </div>
+                    </div>
+
+                    <!-- 4:45 PM | Cancha 1 -->
+                    <div class="match-card" data-cancha="cancha-1" data-cat="veteranos">
+                        <div class="match-header">
+                            <span class="match-time">4:45 P.M.</span>
+                            <span class="match-cancha cancha-1">Cancha 1</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="team-box">
+                                <span class="team-promo">1982</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                            <div class="vs-badge">VS</div>
+                            <div class="team-box">
+                                <span class="team-promo">1983</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">
+                            <span class="match-cat-tag cat-veteranos">Veteranos</span>
+                            <span class="match-date-badge">Sáb 5 Set</span>
+                        </div>
+                    </div>
+
+                    <!-- 4:45 PM | Cancha 2 -->
+                    <div class="match-card" data-cancha="cancha-2" data-cat="benjamines">
+                        <div class="match-header">
+                            <span class="match-time">4:45 P.M.</span>
+                            <span class="match-cancha cancha-2">Cancha 2</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="team-box">
+                                <span class="team-promo">2013</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                            <div class="vs-badge">VS</div>
+                            <div class="team-box">
+                                <span class="team-promo">2018</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">
+                            <span class="match-cat-tag cat-benjamines">Benjamines B</span>
+                            <span class="match-date-badge">Sáb 5 Set</span>
+                        </div>
+                    </div>
+
+                    <!-- 5:40 PM | Cancha 1 -->
+                    <div class="match-card" data-cancha="cancha-1" data-cat="master">
+                        <div class="match-header">
+                            <span class="match-time">5:40 P.M.</span>
+                            <span class="match-cancha cancha-1">Cancha 1</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="team-box">
+                                <span class="team-promo">1987</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                            <div class="vs-badge">VS</div>
+                            <div class="team-box">
+                                <span class="team-promo">1988</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">
+                            <span class="match-cat-tag cat-master">Máster</span>
+                            <span class="match-date-badge">Sáb 5 Set</span>
+                        </div>
+                    </div>
+
+                    <!-- 5:40 PM | Cancha 2 -->
+                    <div class="match-card" data-cancha="cancha-2" data-cat="benjamines">
+                        <div class="match-header">
+                            <span class="match-time">5:40 P.M.</span>
+                            <span class="match-cancha cancha-2">Cancha 2</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="team-box">
+                                <span class="team-promo">2015</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                            <div class="vs-badge">VS</div>
+                            <div class="team-box">
+                                <span class="team-promo">2019</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">
+                            <span class="match-cat-tag cat-benjamines">Benjamines A</span>
+                            <span class="match-date-badge">Sáb 5 Set</span>
+                        </div>
+                    </div>
+
+                    <!-- 6:35 PM | Cancha 1 -->
+                    <div class="match-card" data-cancha="cancha-1" data-cat="libre">
+                        <div class="match-header">
+                            <span class="match-time">6:35 P.M.</span>
+                            <span class="match-cancha cancha-1">Cancha 1</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="team-box">
+                                <span class="team-promo">2001</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                            <div class="vs-badge">VS</div>
+                            <div class="team-box">
+                                <span class="team-promo">2003</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">
+                            <span class="match-cat-tag cat-libre">Libre B</span>
+                            <span class="match-date-badge">Sáb 5 Set</span>
+                        </div>
+                    </div>
+
+                    <!-- 6:35 PM | Cancha 2 -->
+                    <div class="match-card" data-cancha="cancha-2" data-cat="senior">
+                        <div class="match-header">
+                            <span class="match-time">6:35 P.M.</span>
+                            <span class="match-cancha cancha-2">Cancha 2</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="team-box">
+                                <span class="team-promo">1994</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                            <div class="vs-badge">VS</div>
+                            <div class="team-box">
+                                <span class="team-promo">1996</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">
+                            <span class="match-cat-tag cat-senior">Senior</span>
+                            <span class="match-date-badge">Sáb 5 Set</span>
+                        </div>
+                    </div>
+
+                    <!-- 7:30 PM | Cancha 1 -->
+                    <div class="match-card" data-cancha="cancha-1" data-cat="libre">
+                        <div class="match-header">
+                            <span class="match-time">7:30 P.M.</span>
+                            <span class="match-cancha cancha-1">Cancha 1</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="team-box">
+                                <span class="team-promo">2005</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                            <div class="vs-badge">VS</div>
+                            <div class="team-box">
+                                <span class="team-promo">2009</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">
+                            <span class="match-cat-tag cat-libre">Libre A</span>
+                            <span class="match-date-badge">Sáb 5 Set</span>
+                        </div>
+                    </div>
+
+                    <!-- 7:30 PM | Cancha 2 -->
+                    <div class="match-card" data-cancha="cancha-2" data-cat="benjamines">
+                        <div class="match-header">
+                            <span class="match-time">7:30 P.M.</span>
+                            <span class="match-cancha cancha-2">Cancha 2</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="team-box">
+                                <span class="team-promo">2021</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                            <div class="vs-badge">VS</div>
+                            <div class="team-box">
+                                <span class="team-promo">2024</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">
+                            <span class="match-cat-tag cat-benjamines">Benjamines B</span>
+                            <span class="match-date-badge">Sáb 5 Set</span>
+                        </div>
+                    </div>
+
+                    <!-- 8:25 PM | Cancha 1 -->
+                    <div class="match-card" data-cancha="cancha-1" data-cat="master">
+                        <div class="match-header">
+                            <span class="match-time">8:25 P.M.</span>
+                            <span class="match-cancha cancha-1">Cancha 1</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="team-box">
+                                <span class="team-promo">1986</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                            <div class="vs-badge">VS</div>
+                            <div class="team-box">
+                                <span class="team-promo">1989</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">
+                            <span class="match-cat-tag cat-master">Máster</span>
+                            <span class="match-date-badge">Sáb 5 Set</span>
+                        </div>
+                    </div>
+
+                    <!-- 8:25 PM | Cancha 2 -->
+                    <div class="match-card" data-cancha="cancha-2" data-cat="libre">
+                        <div class="match-header">
+                            <span class="match-time">8:25 P.M.</span>
+                            <span class="match-cancha cancha-2">Cancha 2</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="team-box">
+                                <span class="team-promo">2004</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                            <div class="vs-badge">VS</div>
+                            <div class="team-box">
+                                <span class="team-promo">2008</span>
+                                <span class="team-label">Promoción</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">
+                            <span class="match-cat-tag cat-libre">Libre B</span>
+                            <span class="match-date-badge">Sáb 5 Set</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Banner de Promociones que Descansan -->
+                <div class="byes-banner">
+                    <div class="byes-info">
+                        <h4>Promociones que descansan en esta Fecha 1:</h4>
+                        <p>Estas delegaciones no disputan encuentro este sábado 5 y debutarán en la Fecha 2.</p>
+                    </div>
+                    <div class="byes-badges">
+                        <span class="bye-pill">Promo 1995 (Senior)</span>
+                        <span class="bye-pill">Promo 2006 (Libre B)</span>
+                        <span class="bye-pill">Promo 2007 (Libre A)</span>
+                        <span class="bye-pill">Promo 2023 (Benjamines A)</span>
+                    </div>
+                </div>
+
+                <!-- Galería de Afiches Oficiales del Fixture -->
+                <div class="flyers-section">
+                    <div class="section-header-champ" style="margin-bottom: 2rem;">
+                        <span class="section-tag">Material Gráfico Oficial</span>
+                        <h2>Afiches Oficiales del Fixture Fecha 1</h2>
+                        <p>Haz clic en cualquier imagen para verla en tamaño completo o descárgala para compartirla con tu promoción.</p>
+                    </div>
+
+                    <div class="flyers-grid">
+                        <!-- Flyer 1 -->
+                        <div class="flyer-card">
+                            <div class="flyer-img-wrapper" onclick="openLightbox('assets/fixture-sab5/fixture-1-sab5.jpeg', 'Fixture Oficial Fecha 1 - Cancha 1 y 2 (2:00 P.M. a 3:50 P.M.)')">
+                                <img src="assets/fixture-sab5/fixture-1-sab5.jpeg" alt="Fixture Fecha 1 - Parte 1" class="flyer-img" loading="lazy">
+                                <div class="flyer-overlay">
+                                    <div class="flyer-overlay-btn">
+                                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                                    </div>
+                                    <span>Ver en Grande</span>
+                                </div>
+                            </div>
+                            <div class="flyer-info">
+                                <div>
+                                    <h4>Rol de Partidos 1</h4>
+                                    <p>2:00 P.M. a 3:50 P.M. (Canchas 1 y 2)</p>
+                                </div>
+                                <a href="assets/fixture-sab5/fixture-1-sab5.jpeg" download="Fixture-1-Sabado-5-Setiembre.jpeg" class="flyer-btn-download">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                                    <span>Descargar</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Flyer 2 -->
+                        <div class="flyer-card">
+                            <div class="flyer-img-wrapper" onclick="openLightbox('assets/fixture-sab5/fixture-2-sab5.jpeg', 'Fixture Oficial Fecha 1 - Cancha 1 y 2 (3:50 P.M. a 5:40 P.M.)')">
+                                <img src="assets/fixture-sab5/fixture-2-sab5.jpeg" alt="Fixture Fecha 1 - Parte 2" class="flyer-img" loading="lazy">
+                                <div class="flyer-overlay">
+                                    <div class="flyer-overlay-btn">
+                                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                                    </div>
+                                    <span>Ver en Grande</span>
+                                </div>
+                            </div>
+                            <div class="flyer-info">
+                                <div>
+                                    <h4>Rol de Partidos 2</h4>
+                                    <p>3:50 P.M. a 5:40 P.M. (Canchas 1 y 2)</p>
+                                </div>
+                                <a href="assets/fixture-sab5/fixture-2-sab5.jpeg" download="Fixture-2-Sabado-5-Setiembre.jpeg" class="flyer-btn-download">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                                    <span>Descargar</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Flyer 3 -->
+                        <div class="flyer-card">
+                            <div class="flyer-img-wrapper" onclick="openLightbox('assets/fixture-sab5/fixture-3-sab5.jpeg', 'Fixture Oficial Fecha 1 - Cancha 1 y 2 (6:35 P.M. a 8:25 P.M.)')">
+                                <img src="assets/fixture-sab5/fixture-3-sab5.jpeg" alt="Fixture Fecha 1 - Parte 3" class="flyer-img" loading="lazy">
+                                <div class="flyer-overlay">
+                                    <div class="flyer-overlay-btn">
+                                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                                    </div>
+                                    <span>Ver en Grande</span>
+                                </div>
+                            </div>
+                            <div class="flyer-info">
+                                <div>
+                                    <h4>Rol de Partidos 3</h4>
+                                    <p>6:35 P.M. a 8:25 P.M. (Canchas 1 y 2)</p>
+                                </div>
+                                <a href="assets/fixture-sab5/fixture-3-sab5.jpeg" download="Fixture-3-Sabado-5-Setiembre.jpeg" class="flyer-btn-download">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                                    <span>Descargar</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Flyer 4 -->
+                        <div class="flyer-card">
+                            <div class="flyer-img-wrapper" onclick="openLightbox('assets/fixture-sab5/fixture-4-sab5.jpeg', 'Fixture Oficial Fecha 1 - Cancha 2 (8:25 P.M.) y Descansos')">
+                                <img src="assets/fixture-sab5/fixture-4-sab5.jpeg" alt="Fixture Fecha 1 - Parte 4 y descansos" class="flyer-img" loading="lazy">
+                                <div class="flyer-overlay">
+                                    <div class="flyer-overlay-btn">
+                                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                                    </div>
+                                    <span>Ver en Grande</span>
+                                </div>
+                            </div>
+                            <div class="flyer-info">
+                                <div>
+                                    <h4>Rol de Partidos 4 & Descansos</h4>
+                                    <p>8:25 P.M. y Promociones que descansan</p>
+                                </div>
+                                <a href="assets/fixture-sab5/fixture-4-sab5.jpeg" download="Fixture-4-Sabado-5-Setiembre.jpeg" class="flyer-btn-download">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                                    <span>Descargar</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN CATEGORÍAS OFICIALES -->
+        <section class="categories-section" id="categorias" style="background-color: #f7f4ee;">
+            <div class="champ-container">
+                <div class="section-header-champ">
+                    <span class="section-tag">Conformación Oficial</span>
+                    <h2>Categorías del Campeonato 2026</h2>
+                    <p>Así están distribuidas las promociones en cada una de las series y categorías deportivas de ASECLARET.</p>
+                </div>
+
+                <!-- Tarjetas de Categorías Detalladas -->
+                <div class="categories-cards-grid">
+                    
+                    <!-- VETERANOS -->
+                    <div class="cat-group-card">
+                        <div class="cat-group-header">
+                            <h3>Veteranos</h3>
+                            <span class="cat-badge">4 Equipos</span>
+                        </div>
+                        <div class="cat-subgroup">
+                            <div class="cat-subgroup-title">Promociones Inscritas:</div>
+                            <div class="promo-tags-list">
+                                <span class="promo-tag">1979</span>
+                                <span class="promo-tag">1980</span>
+                                <span class="promo-tag">1982</span>
+                                <span class="promo-tag">1983</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MÁSTER -->
+                    <div class="cat-group-card">
+                        <div class="cat-group-header">
+                            <h3>Máster</h3>
+                            <span class="cat-badge">6 Equipos</span>
+                        </div>
+                        <div class="cat-subgroup">
+                            <div class="cat-subgroup-title">Promociones Inscritas:</div>
+                            <div class="promo-tags-list">
+                                <span class="promo-tag">1984</span>
+                                <span class="promo-tag">1986</span>
+                                <span class="promo-tag">1987</span>
+                                <span class="promo-tag">1988</span>
+                                <span class="promo-tag">1989</span>
+                                <span class="promo-tag">1990</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SENIOR -->
+                    <div class="cat-group-card">
+                        <div class="cat-group-header">
+                            <h3>Senior</h3>
+                            <span class="cat-badge">7 Equipos</span>
+                        </div>
+                        <div class="cat-subgroup">
+                            <div class="cat-subgroup-title">Serie A:</div>
+                            <div class="promo-tags-list">
+                                <span class="promo-tag">1993</span>
+                                <span class="promo-tag">1995</span>
+                                <span class="promo-tag">1997</span>
+                            </div>
+                        </div>
+                        <div class="cat-subgroup" style="margin-top: 0.8rem;">
+                            <div class="cat-subgroup-title">Serie B:</div>
+                            <div class="promo-tags-list">
+                                <span class="promo-tag">1991</span>
+                                <span class="promo-tag">1994</span>
+                                <span class="promo-tag">1996</span>
+                                <span class="promo-tag">1998</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- LIBRE -->
+                    <div class="cat-group-card">
+                        <div class="cat-group-header">
+                            <h3>Libre</h3>
+                            <span class="cat-badge">10 Equipos</span>
+                        </div>
+                        <div class="cat-subgroup">
+                            <div class="cat-subgroup-title">Libre A:</div>
+                            <div class="promo-tags-list">
+                                <span class="promo-tag">2000</span>
+                                <span class="promo-tag">2002</span>
+                                <span class="promo-tag">2005</span>
+                                <span class="promo-tag">2007</span>
+                                <span class="promo-tag">2009</span>
+                            </div>
+                        </div>
+                        <div class="cat-subgroup" style="margin-top: 0.8rem;">
+                            <div class="cat-subgroup-title">Libre B:</div>
+                            <div class="promo-tags-list">
+                                <span class="promo-tag">2001</span>
+                                <span class="promo-tag">2003</span>
+                                <span class="promo-tag">2004</span>
+                                <span class="promo-tag">2006</span>
+                                <span class="promo-tag">2008</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BENJAMINES -->
+                    <div class="cat-group-card">
+                        <div class="cat-group-header">
+                            <h3>Benjamines</h3>
+                            <span class="cat-badge">9 Equipos</span>
+                        </div>
+                        <div class="cat-subgroup">
+                            <div class="cat-subgroup-title">Benjamines A:</div>
+                            <div class="promo-tags-list">
+                                <span class="promo-tag">2010</span>
+                                <span class="promo-tag">2014</span>
+                                <span class="promo-tag">2015</span>
+                                <span class="promo-tag">2019</span>
+                                <span class="promo-tag">2023</span>
+                            </div>
+                        </div>
+                        <div class="cat-subgroup" style="margin-top: 0.8rem;">
+                            <div class="cat-subgroup-title">Benjamines B:</div>
+                            <div class="promo-tags-list">
+                                <span class="promo-tag">2013</span>
+                                <span class="promo-tag">2018</span>
+                                <span class="promo-tag">2021</span>
+                                <span class="promo-tag">2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Afiches Oficiales de Categorías -->
+                <div class="flyers-section" style="border-top-color: var(--secondary-color);">
+                    <div class="section-header-champ" style="margin-bottom: 2rem;">
+                        <span class="section-tag">Afiches Oficiales de Categorías</span>
+                        <h2>Láminas Gráficas Oficiales</h2>
+                        <p>Haz clic para ampliar las láminas originales publicadas por la organización.</p>
+                    </div>
+
+                    <div class="flyers-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                        <!-- Categorías Veteranos, Máster y Senior -->
+                        <div class="flyer-card">
+                            <div class="flyer-img-wrapper" onclick="openLightbox('assets/fixture-sab5/categorias-veteranos-master-senior.jpeg', 'Categorías Veteranos, Máster y Senior - ASECLARET 2026')">
+                                <img src="assets/fixture-sab5/categorias-veteranos-master-senior.jpeg" alt="Categorías Veteranos, Máster y Senior" class="flyer-img" loading="lazy">
+                                <div class="flyer-overlay">
+                                    <div class="flyer-overlay-btn">
+                                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                                    </div>
+                                    <span>Ver en Grande</span>
+                                </div>
+                            </div>
+                            <div class="flyer-info">
+                                <div>
+                                    <h4>Veteranos, Máster y Senior</h4>
+                                    <p>Distribución oficial de promociones</p>
+                                </div>
+                                <a href="assets/fixture-sab5/categorias-veteranos-master-senior.jpeg" download="Categorias-Veteranos-Master-Senior.jpeg" class="flyer-btn-download">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                                    <span>Descargar Afiche</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Categorías Libre y Benjamines -->
+                        <div class="flyer-card">
+                            <div class="flyer-img-wrapper" onclick="openLightbox('assets/fixture-sab5/Categorias-libre-benjamines.jpeg', 'Categorías Libre y Benjamines - ASECLARET 2026')">
+                                <img src="assets/fixture-sab5/Categorias-libre-benjamines.jpeg" alt="Categorías Libre y Benjamines" class="flyer-img" loading="lazy">
+                                <div class="flyer-overlay">
+                                    <div class="flyer-overlay-btn">
+                                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                                    </div>
+                                    <span>Ver en Grande</span>
+                                </div>
+                            </div>
+                            <div class="flyer-info">
+                                <div>
+                                    <h4>Libre y Benjamines</h4>
+                                    <p>Series A y B con promociones egresadas</p>
+                                </div>
+                                <a href="assets/fixture-sab5/Categorias-libre-benjamines.jpeg" download="Categorias-Libre-Benjamines.jpeg" class="flyer-btn-download">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                                    <span>Descargar Afiche</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Banner CTA Reglamento -->
+                <div class="champ-cta-banner">
+                    <h2>¿Tienes dudas sobre el reglamento o sanciones?</h2>
+                    <p>
+                        Consulta las bases oficiales, normas de puntaje, tolerancias de W.O., acumulación de tarjetas y disposiciones disciplinarias aprobadas para el campeonato 2026.
+                    </p>
+                    <div class="champ-cta-buttons">
+                        <a href="estatutos.html" class="btn-champ btn-champ-gold">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 2 2h18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                            <span>Ir a Estatutos y Reglamento</span>
+                        </a>
+                        <a href="https://www.facebook.com/aseclar.aqp" target="_blank" rel="noopener noreferrer" class="btn-champ btn-champ-outline">
+                            <span>Seguir en Facebook</span>
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
+    <!-- Modal Lightbox para visualización de afiches en tamaño completo -->
+    <div class="lightbox-modal" id="lightboxModal" onclick="closeLightbox(event)">
+        <div class="lightbox-content">
+            <button type="button" class="lightbox-close-btn" onclick="closeLightbox(event)" aria-label="Cerrar vista previa">&times;</button>
+            <img src="" alt="Vista previa" class="lightbox-img" id="lightboxImg">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- Footer Oficial Compartido -->
     <footer class="footer">
         <div class="footer-container">
             <!-- Logo centrado y descripción -->
@@ -122,17 +929,17 @@
                             <li><a href="index.html" class="footer-nav-link">Inicio</a></li>
                             <li><span class="footer-nav-link" style="cursor: default; opacity: 0.6;">Eventos</span></li>
                             <li><span class="footer-nav-link" style="cursor: default; opacity: 0.6;">Noticias</span></li>
-                            <li><span class="footer-nav-link" style="cursor: default; opacity: 0.6;">Comunidad</span></li>
+                            <li><a href="comunidad.html" class="footer-nav-link">Comunidad</a></li>
                         </ul>
                     </div>
 
                     <div class="footer-nav-column">
                         <h4 class="footer-nav-title">Participación</h4>
                         <ul class="footer-nav-list">
-                            <li><span class="footer-nav-link" style="cursor: default; opacity: 0.6;">Proyectos</span></li>
-                            <li><span class="footer-nav-link" style="cursor: default; opacity: 0.6;">Campeonatos</span></li>
+                            <li><a href="proyectos.html" class="footer-nav-link">Proyectos</a></li>
+                            <li><a href="campeonatos.html" class="footer-nav-link" style="color: var(--accent-gold); font-weight: 600;">Campeonatos</a></li>
                             <li><a href="elecciones.html" class="footer-nav-link">Elecciones</a></li>
-                            <li><span class="footer-nav-link" style="cursor: default; opacity: 0.6;">Estatutos</span></li>
+                            <li><a href="estatutos.html" class="footer-nav-link">Estatutos</a></li>
                         </ul>
                     </div>
 
@@ -165,7 +972,7 @@
             <!-- Sección inferior del footer -->
             <div class="footer-bottom">
                 <p class="footer-copyright">
-                    &copy; 2025 ASECLARET. Todos los derechos reservados.
+                    &copy; 2026 ASECLARET. Todos los derechos reservados.
                 </p>
                 <div class="footer-bottom-links">
                     <span class="footer-bottom-link" style="cursor: default; opacity: 0.6;">Política de Privacidad</span>
@@ -176,13 +983,74 @@
             <!-- Información del desarrollador -->
             <div class="footer-developer">
                 <div class="developer-content">
-                    <p class="developer-text">Sitio desarrollado por <a href="https://github.com/tu-usuario" target="_blank" class="developer-link">contacto@frochaol.com</a>
+                    <p class="developer-text">Sitio desarrollado por <a href="mailto:contacto@frochaol.com" class="developer-link">contacto@frochaol.com</a>
                     </p>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="script.js"></script>
+    <script>
+        // 1. Filtrado de partidos por tab
+        const filterTabs = document.querySelectorAll('.filter-tab-btn');
+        const matchCards = document.querySelectorAll('.match-card');
+
+        filterTabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                filterTabs.forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+
+                const filter = this.getAttribute('data-filter');
+
+                matchCards.forEach(card => {
+                    if (filter === 'all') {
+                        card.style.display = '';
+                    } else if (filter === 'cancha-1' || filter === 'cancha-2') {
+                        if (card.getAttribute('data-cancha') === filter) {
+                            card.style.display = '';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    } else {
+                        // Filtro por categoría
+                        if (card.getAttribute('data-cat') === filter) {
+                            card.style.display = '';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+
+        // 2. Lightbox modal para afiches
+        const lightbox = document.getElementById('lightboxModal');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const lightboxCaption = document.getElementById('lightboxCaption');
+
+        function openLightbox(src, caption) {
+            if (!lightbox || !lightboxImg) return;
+            lightboxImg.src = src;
+            lightboxCaption.textContent = caption || '';
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox(e) {
+            if (e.target === lightbox || e.target.classList.contains('lightbox-close-btn')) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && lightbox && lightbox.classList.contains('active')) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
 </body>
 </html>
