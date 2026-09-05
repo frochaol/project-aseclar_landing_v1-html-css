@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Estatutos - ASECLARET">
-    <meta name="keywords" content="estatutos, reglamento, normativa, aseclaret">
+    <meta name="description" content="Estatutos y Reglamento del Campeonato de Fulbito 2026 - ASECLARET">
+    <meta name="keywords" content="estatutos, reglamento, campeonato 2026, fulbito, futbol 6, aseclaret, exalumnos claretianos">
     <meta name="author" content="ASECLARET">
-    <title>Estatutos - ASECLARET</title>
+    <title>Estatutos del Campeonato 2026 - ASECLARET</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="estatutos-styles.css">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#1B2C4C">
 </head>
 <body>
+    <!-- Header compartido con navbar institucional -->
     <header class="header">
         <nav class="navbar">
             <!-- Menús izquierda (desktop/tablet) -->
@@ -43,12 +45,12 @@
                     <a href="comunidad.html" class="nav-link">Comunidad</a>
                 </li>
                 <li class="nav-item">
-                    <a href="estatutos.html" class="nav-link">Estatutos</a>
+                    <a href="estatutos.html" class="nav-link active" style="color: var(--accent-gold);">Estatutos</a>
                 </li>
             </ul>
 
             <!-- Botón hamburguesa (mobile) -->
-            <div class="hamburger" id="hamburger">
+            <div class="hamburger" id="hamburger" aria-label="Abrir menú de navegación">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -74,32 +76,616 @@
                     <a href="comunidad.html" class="mobile-nav-link">Comunidad</a>
                 </li>
                 <li class="mobile-nav-item">
-                    <a href="estatutos.html" class="mobile-nav-link">Estatutos</a>
+                    <a href="estatutos.html" class="mobile-nav-link" style="color: var(--accent-gold); font-weight: 700;">Estatutos</a>
                 </li>
             </ul>
         </div>
     </header>
 
     <main class="main-content">
-        <!-- Sección En Construcción -->
-        <section class="under-construction">
-            <div class="construction-container">
-                <div class="construction-icon">
-                    <svg viewBox="0 0 24 24" width="80" height="80">
-                        <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" fill="currentColor"/>
+        <!-- Hero Section -->
+        <section class="estatutos-hero">
+            <div class="estatutos-hero-container">
+                <div class="hero-badge-pill">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                     </svg>
+                    <span>Normativa Oficial • Temporada 2026</span>
                 </div>
-                <h1>Página en Construcción</h1>
-                <p class="construction-description">Estamos finalizando la documentación oficial de nuestra asociación. Próximamente encontrarás aquí nuestros estatutos, reglamentos internos y normativas vigentes.</p>
-                <div class="construction-actions">
-                    <a href="index.html" class="construction-button primary">Volver al Inicio</a>
-                    <a href="https://www.facebook.com/aseclar.aqp" target="_blank" rel="noopener noreferrer" class="construction-button secondary">Síguenos en Facebook</a>
+
+                <h1>Estatutos y Reglamento del Campeonato de Fulbito 2026</h1>
+
+                <p class="estatutos-hero-lead">
+                    Bases generales, sistema de competencia, régimen disciplinario y normas de convivencia deportiva aprobadas para el desarrollo del <strong>Segundo Campeonato de Fútbol ASECLARET 2026</strong>.
+                </p>
+
+                <div class="estatutos-hero-actions">
+                    <a href="assets/descargables/Informe_reunion_ASECLARET_22_agosto_2026.pdf" download="Bases_y_Reglamento_Oficial_Campeonato_2026_ASECLARET.pdf" class="btn-hero btn-hero-primary" id="btnDescargaHero">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                            <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/>
+                        </svg>
+                        <span>Descargar Bases Oficiales (PDF)</span>
+                    </a>
+
+                    <a href="assets/descargables/Informe_reunion_ASECLARET_22_agosto_2026.pdf" target="_blank" rel="noopener noreferrer" class="btn-hero btn-hero-secondary">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+                        </svg>
+                        <span>Visualizar en Línea</span>
+                    </a>
+
+                    <a href="#capitulos" class="btn-hero btn-hero-secondary">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/>
+                        </svg>
+                        <span>Explorar Capítulos</span>
+                    </a>
                 </div>
+            </div>
+        </section>
+
+        <!-- Tarjetas de Resumen Ejecutivo -->
+        <section class="estatutos-summary-section">
+            <div class="estatutos-container">
+                <div class="summary-cards-grid">
+                    <!-- Modalidad -->
+                    <div class="summary-card">
+                        <div class="summary-card-icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                            </svg>
+                        </div>
+                        <span class="summary-card-label">Modalidad Oficial</span>
+                        <h3>Fútbol 6 por Equipo</h3>
+                        <p>6 jugadores en cancha (arquero + 5 de campo). Planillas de hasta 15 jugadores inscritos con cambios rotativos.</p>
+                    </div>
+
+                    <!-- Calendario -->
+                    <div class="summary-card">
+                        <div class="summary-card-icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                                <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                            </svg>
+                        </div>
+                        <span class="summary-card-label">Cronograma 2026</span>
+                        <h3>5 Septiembre - 24 Octubre</h3>
+                        <p>Inauguración y desfile: <strong>Sábado 5 de Septiembre a la 1:00 p.m.</strong> Gran jornada final y clausura el 24 de Octubre.</p>
+                    </div>
+
+                    <!-- Horarios y Cancha -->
+                    <div class="summary-card">
+                        <div class="summary-card-icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                            </svg>
+                        </div>
+                        <span class="summary-card-label">Sede & Disponibilidad</span>
+                        <h3>Sábados 12:00 m. a 10:00 p.m.</h3>
+                        <p>Cancha deportiva reservada en horario continuo para el desarrollo de los encuentros oficiales de todas las promociones.</p>
+                    </div>
+
+                    <!-- Confraternidad -->
+                    <div class="summary-card">
+                        <div class="summary-card-icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </div>
+                        <span class="summary-card-label">Valores Claretianos</span>
+                        <h3>Fair Play & Fraternidad</h3>
+                        <p>El campeonato prima la amistad y el reencuentro exalumnos claretianos sobre cualquier interés de competencia desmedida.</p>
+                    </div>
+                </div>
+
+                <!-- Banner Destacado de Descarga Inmediata -->
+                <div class="download-highlight-box">
+                    <div class="download-highlight-info">
+                        <div class="download-icon-circle">
+                            <svg viewBox="0 0 24 24" width="34" height="34" fill="currentColor">
+                                <path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zm4.5 2h1v-3h-1v3zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6z"/>
+                            </svg>
+                        </div>
+                        <div class="download-highlight-text">
+                            <h3>Documento Oficial: Bases y Acuerdos de Delegados 2026</h3>
+                            <p>Informe aprobado en reunión presencial del 22 de agosto con disposiciones de nóminas, arbitraje y convivencia.</p>
+                            <span class="download-file-meta">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                Archivo Oficial Listo para Descarga • Formato PDF (70 KB)
+                            </span>
+                        </div>
+                    </div>
+                    <div class="download-actions-group">
+                        <a href="assets/descargables/Informe_reunion_ASECLARET_22_agosto_2026.pdf" download="Bases_y_Reglamento_Oficial_Campeonato_2026_ASECLARET.pdf" class="btn-download-main">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                            <span>Descargar Archivo Oficial</span>
+                        </a>
+                        <a href="assets/descargables/Informe_reunion_ASECLARET_22_agosto_2026.pdf" target="_blank" rel="noopener noreferrer" class="btn-download-outline">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                            <span>Abrir Documento</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Barra Interactiva de Búsqueda y Navegación -->
+                <div class="estatutos-controls" id="capitulos">
+                    <div class="controls-top-row">
+                        <div class="search-input-wrapper">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                            </svg>
+                            <input type="text" id="statutesSearch" class="search-input" placeholder="Buscar en el reglamento (ej. árbitro, tarjetas, nóminas, walkover, puntajes)..." autocomplete="off">
+                        </div>
+                        <div class="accordion-toggle-buttons">
+                            <button type="button" class="btn-control-toggle" id="btnExpandAll">Expandir Todos</button>
+                            <button type="button" class="btn-control-toggle" id="btnCollapseAll">Colapsar Todos</button>
+                        </div>
+                    </div>
+
+                    <!-- Píldoras de Navegación Rápida -->
+                    <div class="chapter-pills-nav">
+                        <span class="chapter-pills-label">Índice:</span>
+                        <a href="#capitulo-1" class="chapter-pill" data-target="capitulo-1">Cap. I: Organización</a>
+                        <a href="#capitulo-2" class="chapter-pill" data-target="capitulo-2">Cap. II: Nóminas</a>
+                        <a href="#capitulo-3" class="chapter-pill" data-target="capitulo-3">Cap. III: Competencia</a>
+                        <a href="#capitulo-4" class="chapter-pill" data-target="capitulo-4">Cap. IV: Arbitraje</a>
+                        <a href="#capitulo-5" class="chapter-pill" data-target="capitulo-5">Cap. V: Disciplina</a>
+                        <a href="#capitulo-6" class="chapter-pill" data-target="capitulo-6">Cap. VI: Reclamos</a>
+                    </div>
+                </div>
+
+                <!-- Cuerpo de Estatutos por Capítulos (Acordeones) -->
+                <div class="estatutos-body-section" id="estatutosContent">
+
+                    <!-- CAPÍTULO I -->
+                    <div class="chapter-block" id="capitulo-1">
+                        <div class="chapter-header is-open">
+                            <button class="chapter-toggle-trigger" type="button" aria-expanded="true">
+                                <div class="chapter-title-group">
+                                    <span class="chapter-num-badge">I</span>
+                                    <div class="chapter-title-text">
+                                        <h2>Capítulo I: De la Organización, Fines y Delegados</h2>
+                                        <p>Finalidad integradora, atribuciones de la directiva y funciones de los delegados</p>
+                                    </div>
+                                </div>
+                                <span class="chapter-arrow-indicator">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                                    </svg>
+                                </span>
+                            </button>
+
+                            <div class="chapter-content-panel">
+                                <div class="articles-list">
+                                    <!-- Art. 1 -->
+                                    <div class="article-item">
+                                        <div class="article-header">
+                                            <h4 class="article-title">Artículo 1.- Finalidad del Campeonato</h4>
+                                            <span class="article-tag tag-importante">Institucional</span>
+                                        </div>
+                                        <p class="article-text">
+                                            El Segundo Campeonato de Fulbito ASECLARET 2026 tiene como objetivo principal estrechar los lazos de fraternidad, camaradería y vida comunitaria entre las distintas promociones de egresados del Colegio Claretiano y Colegio Claret de Arequipa, promoviendo la actividad física y los valores de nuestra institución.
+                                        </p>
+                                    </div>
+
+                                    <!-- Art. 2 -->
+                                    <div class="article-item">
+                                        <div class="article-header">
+                                            <h4 class="article-title">Artículo 2.- De la Comisión Organizadora</h4>
+                                            <span class="article-tag">Autoridad</span>
+                                        </div>
+                                        <p class="article-text">
+                                            La dirección, coordinación, fiscalización y logística del certamen está a cargo de la <strong>Comisión Organizadora del Campeonato</strong>, designada por la Junta Directiva de ASECLARET. La Comisión es la máxima autoridad ejecutiva durante el torneo para hacer cumplir las presentes bases.
+                                        </p>
+                                    </div>
+
+                                    <!-- Art. 3 -->
+                                    <div class="article-item">
+                                        <div class="article-header">
+                                            <h4 class="article-title">Artículo 3.- De los Delegados de Promoción</h4>
+                                            <span class="article-tag">Representación</span>
+                                        </div>
+                                        <p class="article-text">
+                                            Cada promoción o equipo participante estará representada por un <strong>Delegado Titular</strong> y un <strong>Delegado Suplente</strong> debidamente acreditados ante la Comisión. Son los únicos interlocutores válidos para realizar coordinaciones, trámites, entrega de nóminas y formulación de reclamos.
+                                        </p>
+                                        <div class="article-callout">
+                                            <strong>Nota de Delegados:</strong> La asistencia a las asambleas convocadas por la organización es de carácter obligatorio para garantizar la transparencia de los acuerdos.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CAPÍTULO II -->
+                    <div class="chapter-block" id="capitulo-2">
+                        <div class="chapter-header is-open">
+                            <button class="chapter-toggle-trigger" type="button" aria-expanded="true">
+                                <div class="chapter-title-group">
+                                    <span class="chapter-num-badge">II</span>
+                                    <div class="chapter-title-text">
+                                        <h2>Capítulo II: De los Equipos, Nóminas e Inscripciones</h2>
+                                        <p>Elegibilidad de jugadores, presentación de listas oficiales y condición de asociados</p>
+                                    </div>
+                                </div>
+                                <span class="chapter-arrow-indicator">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                                    </svg>
+                                </span>
+                            </button>
+
+                            <div class="chapter-content-panel">
+                                <div class="articles-list">
+                                    <!-- Art. 4 -->
+                                    <div class="article-item">
+                                        <div class="article-header">
+                                            <h4 class="article-title">Artículo 4.- Conformación y Requisitos de Elegibilidad</h4>
+                                            <span class="article-tag tag-importante">Requisito</span>
+                                        </div>
+                                        <p class="article-text">
+                                            Podrán participar únicamente los exalumnos que hayan cursado estudios en el Colegio Claretiano o Colegio Claret de Arequipa. No se admitirá bajo ninguna circunstancia la inclusión de jugadores no exalumnos ("refuerzos externos"), siendo causal de separación inmediata del equipo infractor.
+                                        </p>
+                                    </div>
+
+                                    <!-- Art. 5 -->
+                                    <div class="article-item">
+                                        <div class="article-header">
+                                            <h4 class="article-title">Artículo 5.- Plazo Oficial para la Entrega de Nóminas</h4>
+                                            <span class="article-tag tag-importante">Plazo Límite</span>
+                                        </div>
+                                        <p class="article-text">
+                                            Conforme a los acuerdos de la asamblea de delegados del 22 de agosto de 2026, el plazo máximo e improrrogable para la entrega de las nóminas oficiales de jugadores con sus correspondientes datos finalizó el <strong>martes 25 de agosto de 2026</strong>.
+                                        </p>
+                                        <ul class="article-bullets">
+                                            <li>Máximo de 15 jugadores inscritos por equipo en planilla oficial.</li>
+                                            <li>Indicación obligatoria del DNI, año de egreso y firma de compromiso.</li>
+                                            <li>Cierre de planilla: Una vez iniciado el campeonato, no se admitirán nuevas incorporaciones sin autorización expresa de la Comisión.</li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Art. 6 -->
+                                    <div class="article-item">
+                                        <div class="article-header">
+                                            <h4 class="article-title">Artículo 6.- Acreditación en Mesa e Identificación</h4>
+                                            <span class="article-tag">Control</span>
+                                        </div>
+                                        <p class="article-text">
+                                            Antes de cada encuentro deportivo, los jugadores deberán presentar ante la mesa de control su Documento Nacional de Identidad (DNI) físico o carnet digital oficial emitido por la asociación para verificar su correcta inscripción en la nómina.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CAPÍTULO III -->
+                    <div class="chapter-block" id="capitulo-3">
+                        <div class="chapter-header is-open">
+                            <button class="chapter-toggle-trigger" type="button" aria-expanded="true">
+                                <div class="chapter-title-group">
+                                    <span class="chapter-num-badge">III</span>
+                                    <div class="chapter-title-text">
+                                        <h2>Capítulo III: Del Sistema de Juego, Calendario y Puntuación</h2>
+                                        <p>Modalidad de fútbol 6, tiempos de juego, walkover, puntualidad y desfile inaugural</p>
+                                    </div>
+                                </div>
+                                <span class="chapter-arrow-indicator">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                                    </svg>
+                                </span>
+                            </button>
+
+                            <div class="chapter-content-panel">
+                                <div class="articles-list">
+                                    <!-- Art. 7 -->
+                                    <div class="article-item">
+                                        <div class="article-header">
+                                            <h4 class="article-title">Artículo 7.- Modalidad de Juego y Duración</h4>
+                                            <span class="article-tag tag-puntaje">Reglas de Juego</span>
+                                        </div>
+                                        <p class="article-text">
+                                            Los partidos se disputarán bajo la modalidad de <strong>Fútbol 6</strong> (un guardameta y cinco jugadores de campo).
+                                        </p>
+                                        <ul class="article-bullets">
+                                            <li><strong>Duración:</strong> Dos tiempos de 20 minutos cada uno, con un intermedio de descanso de 5 minutos.</li>
+                                            <li><strong>Cambios:</strong> Cambios libres y rotativos con autorización previa de la mesa de control o árbitro.</li>
+                                            <li><strong>Mínimo de jugadores:</strong> Un equipo puede iniciar o continuar el partido con un mínimo de 4 jugadores en cancha.</li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Art. 8 -->
+                                    <div class="article-item">
+                                        <div class="article-header">
+                                            <h4 class="article-title">Artículo 8.- Sistema de Puntuación</h4>
+                                            <span class="article-tag tag-puntaje">Tabla de Puntos</span>
+                                        </div>
+                                        <p class="article-text">
+                                            La tabla general y de grupos se regirá por la siguiente escala estándar:
+                                        </p>
+                                        <ul class="article-bullets">
+                                            <li><strong>Partido Ganado:</strong> 3 puntos</li>
+                                            <li><strong>Partido Empatado:</strong> 1 punto</li>
+                                            <li><strong>Partido Perdido:</strong> 0 puntos</li>
+                                            <li><strong>Walkover (W.O.):</strong> 0 puntos para el infractor y marcador de 2-0 a favor del equipo presente.</li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Art. 9 -->
+                                    <div class="article-item">
+                                        <div class="article-header">
+                                            <h4 class="article-title">Artículo 9.- Desfile Inaugural y Bonificación de Puntos</h4>
+                                            <span class="article-tag tag-puntaje">Inauguración</span>
+                                        </div>
+                                        <p class="article-text">
+                                            La inauguración oficial del campeonato se llevará a cabo el <strong>sábado 5 de septiembre a la 1:00 p.m.</strong> con el tradicional desfile de promociones.
+                                        </p>
+                                        <div class="article-callout">
+                                            <strong>Bonificación Especial:</strong> Las promociones que participen en el desfile inaugural debidamente uniformadas y con un mínimo del 70% de su plantilla recibirán una bonificación de <strong>1 punto en la tabla general</strong> por compromiso institucional.
+                                        </div>
+                                    </div>
+
+                                    <!-- Art. 10 -->
+                                    <div class="article-item">
+                                        <div class="article-header">
+                                            <h4 class="article-title">Artículo 10.- Tolerancia, Horarios y Walkover (W.O.)</h4>
+                                            <span class="article-tag tag-disciplina">Puntualidad</span>
+                                        </div>
+                                        <p class="article-text">
+                                            Se concederá una tolerancia máxima de <strong>10 minutos</strong> únicamente para el primer partido de cada fecha deportiva. Para los encuentros sucesivos, el horario fijado en el rol oficial es estricto; el equipo que no se presente en cancha perderá por Walkover (W.O.).
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CAPÍTULO IV -->
+                    <div class="chapter-block" id="capitulo-4">
+                        <div class="chapter-header is-open">
+                            <button class="chapter-toggle-trigger" type="button" aria-expanded="true">
+                                <div class="chapter-title-group">
+                                    <span class="chapter-num-badge">IV</span>
+                                    <div class="chapter-title-text">
+                                        <h2>Capítulo IV: Del Arbitraje y Mesa de Control</h2>
+                                        <p>Autoridad de los jueces colegiados, control de planilla oficial y deberes en mesa</p>
+                                    </div>
+                                </div>
+                                <span class="chapter-arrow-indicator">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                                    </svg>
+                                </span>
+                            </button>
+
+                            <div class="chapter-content-panel">
+                                <div class="articles-list">
+                                    <!-- Art. 11 -->
+                                    <div class="article-item">
+                                        <div class="article-header">
+                                            <h4 class="article-title">Artículo 11.- Cuerpo Arbitral Colegiado</h4>
+                                            <span class="article-tag">Autoridad Técnica</span>
+                                        </div>
+                                        <p class="article-text">
+                                            El arbitraje de todos los encuentros estará a cargo de árbitros colegiados neutrales e idóneos contratados especialmente para el campeonato. Sus fallos de apreciación técnica dentro del terreno de juego son inapelables y definitivos.
+                                        </p>
+                                    </div>
+
+                                    <!-- Art. 12 -->
+                                    <div class="article-item">
+                                        <div class="article-header">
+                                            <h4 class="article-title">Artículo 12.- Mesa de Control y Planilla Oficial</h4>
+                                            <span class="article-tag">Registro</span>
+                                        </div>
+                                        <p class="article-text">
+                                            En cada campo existirá una <strong>Mesa de Control</strong> designada por la Comisión Organizadora. Su labor consiste en verificar la nómina de los jugadores, registrar los goles, controlar el tiempo cronometrado, anotar tarjetas y recibir las firmas de los capitanes al término del cotejo.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CAPÍTULO V -->
+                    <div class="chapter-block" id="capitulo-5">
+                        <div class="chapter-header is-open">
+                            <button class="chapter-toggle-trigger" type="button" aria-expanded="true">
+                                <div class="chapter-title-group">
+                                    <span class="chapter-num-badge">V</span>
+                                    <div class="chapter-title-text">
+                                        <h2>Capítulo V: Régimen Disciplinario, Sanciones y Fair Play</h2>
+                                        <p>Tarjetas amarillas y rojas, sanciones por faltas graves y convivencia ejemplar</p>
+                                    </div>
+                                </div>
+                                <span class="chapter-arrow-indicator">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                                    </svg>
+                                </span>
+                            </button>
+
+                            <div class="chapter-content-panel">
+                                <div class="articles-list">
+                                    <!-- Art. 13 -->
+                                    <div class="article-item">
+                                        <div class="article-header">
+                                            <h4 class="article-title">Artículo 13.- Amonestaciones y Expulsiones</h4>
+                                            <span class="article-tag tag-disciplina">Tarjetas</span>
+                                        </div>
+                                        <ul class="article-bullets">
+                                            <li><strong>Tarjeta Amarilla:</strong> Constituye una amonestación formal. La acumulación de <strong>dos (2) tarjetas amarillas</strong> en partidos consecutivos conlleva la suspensión automática de una (1) fecha.</li>
+                                            <li><strong>Tarjeta Roja Directa:</strong> Implica la expulsión del terreno de juego y una sanción mínima de <strong>una (1) fecha de suspensión</strong>, sujeta a evaluación del informe arbitral.</li>
+                                            <li><strong>Doble Amarilla en un mismo partido:</strong> Equivale a expulsión y sanción automática por una fecha.</li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Art. 14 -->
+                                    <div class="article-item">
+                                        <div class="article-header">
+                                            <h4 class="article-title">Artículo 14.- Tolerancia Cero a la Agresión Física o Verbal</h4>
+                                            <span class="article-tag tag-importante">Tolerancia Cero</span>
+                                        </div>
+                                        <p class="article-text">
+                                            Cualquier intento o acto de agresión física hacia los árbitros, rivales, compañeros, miembros de mesa o público asistente será sancionado con la <strong>expulsión definitiva e inmediata del jugador del campeonato</strong>, además de la remisión de su caso a la Junta Directiva de ASECLARET para medidas institucionales.
+                                        </p>
+                                    </div>
+
+                                    <!-- Art. 15 -->
+                                    <div class="article-item">
+                                        <div class="article-header">
+                                            <h4 class="article-title">Artículo 15.- Responsabilidad sobre Barras y Simpatizantes</h4>
+                                            <span class="article-tag">Convivencia</span>
+                                        </div>
+                                        <p class="article-text">
+                                            Cada delegación y promoción es directamente solidaria y responsable por el comportamiento de sus hinchas, familiares y simpatizantes. El ingreso de fuegos pirotécnicos, invasión al campo o actitudes violentas acarreará amonestaciones y eventual resta de puntos para el equipo infractor.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CAPÍTULO VI -->
+                    <div class="chapter-block" id="capitulo-6">
+                        <div class="chapter-header is-open">
+                            <button class="chapter-toggle-trigger" type="button" aria-expanded="true">
+                                <div class="chapter-title-group">
+                                    <span class="chapter-num-badge">VI</span>
+                                    <div class="chapter-title-text">
+                                        <h2>Capítulo VI: De los Reclamos y Disposiciones Finales</h2>
+                                        <p>Mecanismos de impugnación, plazos de fallo e interpretación de casos no previstos</p>
+                                    </div>
+                                </div>
+                                <span class="chapter-arrow-indicator">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                                    </svg>
+                                </span>
+                            </button>
+
+                            <div class="chapter-content-panel">
+                                <div class="articles-list">
+                                    <!-- Art. 16 -->
+                                    <div class="article-item">
+                                        <div class="article-header">
+                                            <h4 class="article-title">Artículo 16.- Procedimiento Formal de Reclamos</h4>
+                                            <span class="article-tag">Formalidad</span>
+                                        </div>
+                                        <p class="article-text">
+                                            Todo reclamo sobre una presunta irregularidad en el partido debe ser consignado obligatoriamente en la planilla de juego por el capitán del equipo antes de retirarse del campo.
+                                        </p>
+                                        <p class="article-text">
+                                            El Delegado Oficial deberá fundamentar por escrito el reclamo ante la Comisión Organizadora dentro de un plazo máximo de <strong>48 horas hábiles</strong> posteriores al encuentro.
+                                        </p>
+                                    </div>
+
+                                    <!-- Art. 17 -->
+                                    <div class="article-item">
+                                        <div class="article-header">
+                                            <h4 class="article-title">Artículo 17.- Resoluciones Inapelables</h4>
+                                            <span class="article-tag">Comisión de Justicia</span>
+                                        </div>
+                                        <p class="article-text">
+                                            La Comisión de Justicia Deportiva de ASECLARET evaluará las pruebas, informe arbitral y descargo de las partes. Sus resoluciones se emitirán antes del inicio de la siguiente fecha y tendrán carácter <strong>definitivo e inapelable</strong>.
+                                        </p>
+                                    </div>
+
+                                    <!-- Art. 18 -->
+                                    <div class="article-item">
+                                        <div class="article-header">
+                                            <h4 class="article-title">Artículo 18.- Casos No Previstos</h4>
+                                            <span class="article-tag tag-importante">Cláusula de Cierre</span>
+                                        </div>
+                                        <p class="article-text">
+                                            Cualquier situación no contemplada explícitamente en el presente estatuto será resuelta de manera soberana por la Comisión Organizadora en coordinación con el Consejo Directivo de ASECLARET, primando siempre el espíritu de equidad, verdad y fraternidad claretiana.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Zona de Descargas Complementarias -->
+                <section class="estatutos-downloads-section">
+                    <div class="downloads-section-header">
+                        <h2>Documentación Oficial Descargable</h2>
+                        <p>Descarga los archivos oficiales aprobados por la directiva y la asamblea de delegados para tu equipo y promoción.</p>
+                    </div>
+
+                    <div class="downloads-grid">
+                        <!-- Doc 1: Informe y Reglamento 2026 -->
+                        <div class="download-card-doc">
+                            <div>
+                                <div class="doc-top">
+                                    <div class="doc-badge-icon">
+                                        <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                                            <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 2 2h18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="doc-info">
+                                        <h3>Informe de Reunión y Acuerdos</h3>
+                                        <p>Acuerdos oficiales de delegados para el Segundo Campeonato de Fútbol ASECLARET 2026.</p>
+                                    </div>
+                                </div>
+                                <div class="doc-meta-info">
+                                    <span>Formato: PDF</span>
+                                    <span>•</span>
+                                    <span>Fecha: 22 de Agosto 2026</span>
+                                </div>
+                            </div>
+                            <a href="assets/descargables/Informe_reunion_ASECLARET_22_agosto_2026.pdf" download="Informe_reunion_ASECLARET_22_agosto_2026.pdf" class="doc-action-btn">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                                <span>Descargar Documento PDF</span>
+                            </a>
+                        </div>
+
+                        <!-- Doc 2: Estatutos Institucionales Generales -->
+                        <div class="download-card-doc">
+                            <div>
+                                <div class="doc-top">
+                                    <div class="doc-badge-icon">
+                                        <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14h2v2h-2v-2zm0-10h2v8h-2V6z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="doc-info">
+                                        <h3>Estatutos Generales de ASECLARET</h3>
+                                        <p>Estatuto institucional de la Asociación de Ex Claretianos de Arequipa (Marco Legal 2026).</p>
+                                    </div>
+                                </div>
+                                <div class="doc-meta-info">
+                                    <span>Formato: DOCX</span>
+                                    <span>•</span>
+                                    <span>Vigente: 2026</span>
+                                </div>
+                            </div>
+                            <a href="assets/Estatutos%20de%20la%20Asociacion%20de%20Ex%20Claretianos%20de%20Arequipa%202026.docx" download="Estatutos_Asociacion_ASECLARET_2026.docx" class="doc-action-btn">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                                <span>Descargar Estatuto Institucional</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Callout Final -->
+                <div class="estatutos-callout-footer">
+                    <h2>¡Vivamos el Deporte con Fraternidad Claretiana!</h2>
+                    <p>
+                        El éxito del campeonato depende del compromiso, puntualidad y respeto de cada uno de los jugadores, delegados e hinchas de las diferentes promociones.
+                    </p>
+                    <div class="callout-buttons">
+                        <a href="index.html" class="btn-cta-gold">Volver al Inicio</a>
+                        <a href="https://www.facebook.com/aseclar.aqp" target="_blank" rel="noopener noreferrer" class="btn-cta-outline">Comunidad en Facebook</a>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
+    <!-- Footer Oficial Compartido -->
     <footer class="footer">
         <div class="footer-container">
             <!-- Logo centrado y descripción -->
@@ -122,17 +708,17 @@
                             <li><a href="index.html" class="footer-nav-link">Inicio</a></li>
                             <li><span class="footer-nav-link" style="cursor: default; opacity: 0.6;">Eventos</span></li>
                             <li><span class="footer-nav-link" style="cursor: default; opacity: 0.6;">Noticias</span></li>
-                            <li><span class="footer-nav-link" style="cursor: default; opacity: 0.6;">Comunidad</span></li>
+                            <li><a href="comunidad.html" class="footer-nav-link">Comunidad</a></li>
                         </ul>
                     </div>
 
                     <div class="footer-nav-column">
                         <h4 class="footer-nav-title">Participación</h4>
                         <ul class="footer-nav-list">
-                            <li><span class="footer-nav-link" style="cursor: default; opacity: 0.6;">Proyectos</span></li>
-                            <li><span class="footer-nav-link" style="cursor: default; opacity: 0.6;">Campeonatos</span></li>
+                            <li><a href="proyectos.html" class="footer-nav-link">Proyectos</a></li>
+                            <li><a href="campeonatos.html" class="footer-nav-link">Campeonatos</a></li>
                             <li><a href="elecciones.html" class="footer-nav-link">Elecciones</a></li>
-                            <li><span class="footer-nav-link" style="cursor: default; opacity: 0.6;">Estatutos</span></li>
+                            <li><a href="estatutos.html" class="footer-nav-link" style="color: var(--accent-gold); font-weight: 600;">Estatutos</a></li>
                         </ul>
                     </div>
 
@@ -165,7 +751,7 @@
             <!-- Sección inferior del footer -->
             <div class="footer-bottom">
                 <p class="footer-copyright">
-                    &copy; 2025 ASECLARET. Todos los derechos reservados.
+                    &copy; 2026 ASECLARET. Todos los derechos reservados.
                 </p>
                 <div class="footer-bottom-links">
                     <span class="footer-bottom-link" style="cursor: default; opacity: 0.6;">Política de Privacidad</span>
@@ -176,13 +762,127 @@
             <!-- Información del desarrollador -->
             <div class="footer-developer">
                 <div class="developer-content">
-                    <p class="developer-text">Sitio desarrollado por <a href="https://github.com/tu-usuario" target="_blank" class="developer-link">contacto@frochaol.com</a>
+                    <p class="developer-text">Sitio desarrollado por <a href="mailto:contacto@frochaol.com" class="developer-link">contacto@frochaol.com</a>
                     </p>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- Script compartido y controladores interactivos -->
     <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 1. Acordeón interactivo para los capítulos
+            const toggleButtons = document.querySelectorAll('.chapter-toggle-trigger');
+            toggleButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const chapterHeader = this.closest('.chapter-header');
+                    const isOpen = chapterHeader.classList.contains('is-open');
+                    
+                    chapterHeader.classList.toggle('is-open');
+                    this.setAttribute('aria-expanded', !isOpen);
+                });
+            });
+
+            // 2. Botones de Expandir y Colapsar Todos
+            const btnExpandAll = document.getElementById('btnExpandAll');
+            const btnCollapseAll = document.getElementById('btnCollapseAll');
+            const allChapterHeaders = document.querySelectorAll('.chapter-header');
+
+            if (btnExpandAll) {
+                btnExpandAll.addEventListener('click', function() {
+                    allChapterHeaders.forEach(ch => {
+                        ch.classList.add('is-open');
+                        const trigger = ch.querySelector('.chapter-toggle-trigger');
+                        if (trigger) trigger.setAttribute('aria-expanded', 'true');
+                    });
+                });
+            }
+
+            if (btnCollapseAll) {
+                btnCollapseAll.addEventListener('click', function() {
+                    allChapterHeaders.forEach(ch => {
+                        ch.classList.remove('is-open');
+                        const trigger = ch.querySelector('.chapter-toggle-trigger');
+                        if (trigger) trigger.setAttribute('aria-expanded', 'false');
+                    });
+                });
+            }
+
+            // 3. Filtro de búsqueda en tiempo real
+            const searchInput = document.getElementById('statutesSearch');
+            const allArticles = document.querySelectorAll('.article-item');
+            const allChapters = document.querySelectorAll('.chapter-block');
+
+            if (searchInput) {
+                searchInput.addEventListener('input', function() {
+                    const query = this.value.toLowerCase().trim();
+
+                    if (query === '') {
+                        // Restaurar visibilidad
+                        allArticles.forEach(art => art.style.display = '');
+                        allChapters.forEach(chap => {
+                            chap.style.display = '';
+                        });
+                        return;
+                    }
+
+                    // Filtrar artículos
+                    allChapters.forEach(chap => {
+                        const articlesInChapter = chap.querySelectorAll('.article-item');
+                        let chapterHasMatch = false;
+
+                        articlesInChapter.forEach(art => {
+                            const text = art.textContent.toLowerCase();
+                            if (text.includes(query)) {
+                                art.style.display = '';
+                                chapterHasMatch = true;
+                            } else {
+                                art.style.display = 'none';
+                            }
+                        });
+
+                        if (chapterHasMatch) {
+                            chap.style.display = '';
+                            // Abrir capítulo si contiene coincidencia
+                            const header = chap.querySelector('.chapter-header');
+                            if (header) {
+                                header.classList.add('is-open');
+                                const trigger = header.querySelector('.chapter-toggle-trigger');
+                                if (trigger) trigger.setAttribute('aria-expanded', 'true');
+                            }
+                        } else {
+                            chap.style.display = 'none';
+                        }
+                    });
+                });
+            }
+
+            // 4. Smooth jump compensado para las píldoras de índice
+            const pills = document.querySelectorAll('.chapter-pill');
+            pills.forEach(pill => {
+                pill.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('data-target');
+                    const targetEl = document.getElementById(targetId);
+                    if (targetEl) {
+                        // Asegurar que esté abierto
+                        const header = targetEl.querySelector('.chapter-header');
+                        if (header && !header.classList.contains('is-open')) {
+                            header.classList.add('is-open');
+                        }
+
+                        // Scroll suave
+                        targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+                        // Marcar píldora activa
+                        pills.forEach(p => p.classList.remove('active'));
+                        this.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

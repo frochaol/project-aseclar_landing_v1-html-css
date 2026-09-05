@@ -18,7 +18,8 @@ El sitio está compuesto por varias páginas HTML estáticas interconectadas:
 - `index.html`: La página principal o "Home". Contiene la sección hero de bienvenida, comunicados oficiales, eventos futuros, noticias y un "Únete a nosotros".
 - `nosotros.html`: Información institucional de la asociación, visión, misión y valores.
 - `elecciones.html`: Una página especial y detallada con los resultados electorales, gráficos de barras de los votos y perfiles de los partidos (PAD y ECC). Tiene su propia hoja de estilos (`elecciones-styles.css`).
-- Páginas en construcción: `campeonatos.html`, `proyectos.html`, `comunidad.html`, `estatutos.html`. Muestran un mensaje amigable indicando que se está trabajando en ellas.
+- `estatutos.html`: Página oficial de los Estatutos y Reglamento del Campeonato 2026 de Fulbito de ASECLARET. Cuenta con acordeón interactivo por capítulos, buscador en tiempo real, resumen de bases y descarga de documentos oficiales (`estatutos-styles.css`).
+- Páginas en construcción: `campeonatos.html`, `proyectos.html`, `comunidad.html`. Muestran un mensaje amigable indicando que se está trabajando en ellas.
 
 ## 3. Arquitectura CSS (`styles.css` y `elecciones-styles.css`)
 
@@ -34,10 +35,9 @@ En `:root` se definen las variables CSS (`--primary-color`, `--secondary-color`,
 - **Secciones (Sections)**: Utilizan `display: flex` y `display: grid` para distribuir el contenido uniformemente (ej. las noticias, tarjetas de valores, etc.).
 - **Animaciones**: Incorpora animaciones de entrada (`fadeInUp`), efectos *hover* sutiles (escalado, sombras extendidas, cambio de colores de bordes/fondos) y botones interactivos.
 
-### Estilos Específicos (`elecciones-styles.css`)
-Aplicados exclusivamente en `elecciones.html`, manejan componentes particulares como:
-- Barras de progreso de resultados electorales.
-- Tarjetas informativas de cada partido (con colores específicos para cada agrupación).
+### Estilos Específicos (`elecciones-styles.css` y `estatutos-styles.css`)
+- **`elecciones-styles.css`**: Aplicados exclusivamente en `elecciones.html` para barras de progreso, resultados electorales y tarjetas de partidos.
+- **`estatutos-styles.css`**: Aplicados exclusivamente en `estatutos.html` para el acordeón reglamentario, tarjetas de resumen del campeonato 2026, buscador en vivo y módulos de descarga oficial.
 
 ## 4. Funcionalidad JavaScript (`script.js`)
 
