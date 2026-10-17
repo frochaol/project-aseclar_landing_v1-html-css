@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Segundo Campeonato de Fulbito ASECLARET 2026 - Fixtures de las Fechas 1, 2 y 3, y Tablas de Posiciones Oficiales al día de hoy">
-    <meta name="keywords" content="campeonatos, fixture fecha 1, fixture fecha 2, fixture fecha 3, tabla de posiciones, fulbito, deportes, ex claretianos, aseclaret 2026">
+    <meta name="description" content="Segundo Campeonato de Fulbito ASECLARET 2026 - Fixtures de las Fechas 1 a la 6, y Tablas de Posiciones Oficiales al día de hoy">
+    <meta name="keywords" content="campeonatos, fixture fecha 1, fixture fecha 2, fixture fecha 3, fixture fecha 4, fixture fecha 5, fixture fecha 6, tabla de posiciones, fulbito, deportes, ex claretianos, aseclaret 2026">
     <meta name="author" content="ASECLARET">
     <title>Campeonato 2026 - ASECLARET</title>
     <link rel="stylesheet" href="styles.css">
@@ -96,7 +96,7 @@
                 <h1>Campeonato Oficial ASECLARET 2026</h1>
 
                 <p class="champ-hero-subtitle">
-                    ¡La emoción del campeonato claretiano está en marcha! Consulta el rol oficial de las <strong>Fechas 1, 2 y 3</strong>, revisa la <strong>Tabla de Posiciones acumulada al día de hoy</strong> y descarga los afiches oficiales de cada jornada.
+                    ¡La emoción del campeonato claretiano está en marcha! Consulta el rol oficial de las <strong>Fechas 1 a la 6</strong>, revisa la <strong>Tabla de Posiciones acumulada al día de hoy</strong> y descarga los afiches oficiales de cada jornada.
                 </p>
 
                 <div class="champ-hero-actions">
@@ -111,7 +111,7 @@
                         <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
                             <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
                         </svg>
-                        <span>Ver Fixtures (Fechas 1, 2 y 3)</span>
+                        <span>Ver Fixtures (Fechas 1 a 6)</span>
                     </a>
 
                     <a href="#categorias" class="btn-champ btn-champ-outline">
@@ -175,22 +175,34 @@
             </div>
         </section>
 
-        <!-- SECCIÓN FIXTURE OFICIAL: FECHAS 1, 2 Y 3 -->
+        <!-- SECCIÓN FIXTURE OFICIAL: FECHAS 1 A 6 -->
         <section class="fixture-section" id="fixture">
             <div class="champ-container">
                 <div class="section-header-champ">
                     <span class="section-tag">Programación de Partidos</span>
                     <h2>Fixture Oficial del Campeonato 2026</h2>
-                    <p>Selecciona la jornada para consultar los roles de partidos, horarios y afiches oficiales de las 3 fechas disputadas en el complejo Mi Barrunto.</p>
+                    <p>Selecciona la jornada para consultar los roles de partidos, horarios y afiches oficiales de las 6 fechas disputadas en el complejo Mi Barrunto.</p>
                 </div>
 
                 <!-- Selector de Fechas / Jornadas -->
                 <div class="fechas-selector-wrapper">
                     <div class="fechas-selector-tabs" id="fechasSelector">
-                        <button type="button" class="fecha-tab-btn active" data-fecha="fecha-3">
+                        <button type="button" class="fecha-tab-btn active" data-fecha="fecha-6">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg>
+                            <span>Fecha 6 (Sáb 17 Oct)</span>
+                            <span class="fecha-badge-recent">Reciente</span>
+                        </button>
+                        <button type="button" class="fecha-tab-btn" data-fecha="fecha-5">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg>
+                            <span>Fecha 5 (Sáb 10 Oct)</span>
+                        </button>
+                        <button type="button" class="fecha-tab-btn" data-fecha="fecha-4">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg>
+                            <span>Fecha 4 (Sáb 26 Set)</span>
+                        </button>
+                        <button type="button" class="fecha-tab-btn" data-fecha="fecha-3">
                             <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg>
                             <span>Fecha 3 (Sáb 19 Set)</span>
-                            <span class="fecha-badge-recent">Reciente</span>
                         </button>
                         <button type="button" class="fecha-tab-btn" data-fecha="fecha-2">
                             <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg>
@@ -204,15 +216,290 @@
                 </div>
 
                 <!-- ==============================================
-                     PANEL FECHA 3 (SÁBADO 19 DE SETIEMBRE) - ACTIVO
+                     PANEL FECHA 6 (SÁBADO 17 DE OCTUBRE) - ACTIVO
                      ============================================== -->
-                <div class="fecha-panel active" id="panel-fecha-3">
+                <div class="fecha-panel active" id="panel-fecha-6">
+                    <div class="fecha-header-banner">
+                        <div>
+                            <h3>Fecha 6: Sábado 17 de Octubre de 2026</h3>
+                            <p>Sexta jornada oficial disputada en el complejo Mi Barrunto (Canchas 1 y 2).</p>
+                        </div>
+                        <span class="fecha-status-pill status-latest">Jornada Más Reciente</span>
+                    </div>
+
+                    <div class="flyers-grid">
+                        <!-- Flyer 1 Fecha 6 -->
+                        <div class="flyer-card">
+                            <div class="flyer-img-wrapper" onclick="openLightbox('assets/fixture-sab17-oct/fixture-1-sab-17.png', 'Fixture Oficial Fecha 6 - Rol de Partidos 1 (Sábado 17 de Octubre)')">
+                                <img src="assets/fixture-sab17-oct/fixture-1-sab-17.png" alt="Fixture Fecha 6 - Rol de Partidos 1" class="flyer-img" loading="lazy">
+                                <div class="flyer-overlay">
+                                    <div class="flyer-overlay-btn">
+                                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                                    </div>
+                                    <span>Ver en Grande</span>
+                                </div>
+                            </div>
+                            <div class="flyer-info">
+                                <div>
+                                    <h4>Rol de Partidos 1</h4>
+                                    <p>Canchas 1 y 2 • 2:00 P.M. a 3:50 P.M.</p>
+                                </div>
+                                <a href="assets/fixture-sab17-oct/fixture-1-sab-17.png" download="Fixture-1-Fecha6-Sabado-17-Octubre.png" class="flyer-btn-download">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                                    <span>Descargar</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Flyer 2 Fecha 6 -->
+                        <div class="flyer-card">
+                            <div class="flyer-img-wrapper" onclick="openLightbox('assets/fixture-sab17-oct/fixture-2-sab-17.png', 'Fixture Oficial Fecha 6 - Rol de Partidos 2 (Sábado 17 de Octubre)')">
+                                <img src="assets/fixture-sab17-oct/fixture-2-sab-17.png" alt="Fixture Fecha 6 - Rol de Partidos 2" class="flyer-img" loading="lazy">
+                                <div class="flyer-overlay">
+                                    <div class="flyer-overlay-btn">
+                                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                                    </div>
+                                    <span>Ver en Grande</span>
+                                </div>
+                            </div>
+                            <div class="flyer-info">
+                                <div>
+                                    <h4>Rol de Partidos 2</h4>
+                                    <p>Canchas 1 y 2 • 3:50 P.M. a 5:40 P.M.</p>
+                                </div>
+                                <a href="assets/fixture-sab17-oct/fixture-2-sab-17.png" download="Fixture-2-Fecha6-Sabado-17-Octubre.png" class="flyer-btn-download">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                                    <span>Descargar</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Flyer 3 Fecha 6 -->
+                        <div class="flyer-card">
+                            <div class="flyer-img-wrapper" onclick="openLightbox('assets/fixture-sab17-oct/fixture-3-sab-17.png', 'Fixture Oficial Fecha 6 - Rol de Partidos 3 y Descanso (Sábado 17 de Octubre)')">
+                                <img src="assets/fixture-sab17-oct/fixture-3-sab-17.png" alt="Fixture Fecha 6 - Rol de Partidos 3 y Descanso" class="flyer-img" loading="lazy">
+                                <div class="flyer-overlay">
+                                    <div class="flyer-overlay-btn">
+                                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                                    </div>
+                                    <span>Ver en Grande</span>
+                                </div>
+                            </div>
+                            <div class="flyer-info">
+                                <div>
+                                    <h4>Rol de Partidos 3 & Descanso</h4>
+                                    <p>Cancha 2 (6:35 P.M.) • Promoción que descansa (1996)</p>
+                                </div>
+                                <a href="assets/fixture-sab17-oct/fixture-3-sab-17.png" download="Fixture-3-Fecha6-Sabado-17-Octubre.png" class="flyer-btn-download">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                                    <span>Descargar</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==============================================
+                     PANEL FECHA 5 (SÁBADO 10 DE OCTUBRE)
+                     ============================================== -->
+                <div class="fecha-panel" id="panel-fecha-5">
+                    <div class="fecha-header-banner">
+                        <div>
+                            <h3>Fecha 5: Sábado 10 de Octubre de 2026</h3>
+                            <p>Quinta jornada oficial disputada en el complejo Mi Barrunto (Canchas 1 y 2).</p>
+                        </div>
+                        <span class="fecha-status-pill status-completed">Disputada</span>
+                    </div>
+
+                    <div class="flyers-grid">
+                        <!-- Flyer 1 Fecha 5 -->
+                        <div class="flyer-card">
+                            <div class="flyer-img-wrapper" onclick="openLightbox('assets/fixture-sab10-oct/fixture-1-sab-10.png', 'Fixture Oficial Fecha 5 - Rol de Partidos 1 (Sábado 10 de Octubre)')">
+                                <img src="assets/fixture-sab10-oct/fixture-1-sab-10.png" alt="Fixture Fecha 5 - Rol de Partidos 1" class="flyer-img" loading="lazy">
+                                <div class="flyer-overlay">
+                                    <div class="flyer-overlay-btn">
+                                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                                    </div>
+                                    <span>Ver en Grande</span>
+                                </div>
+                            </div>
+                            <div class="flyer-info">
+                                <div>
+                                    <h4>Rol de Partidos 1</h4>
+                                    <p>Canchas 1 y 2 • 2:00 P.M. a 3:50 P.M.</p>
+                                </div>
+                                <a href="assets/fixture-sab10-oct/fixture-1-sab-10.png" download="Fixture-1-Fecha5-Sabado-10-Octubre.png" class="flyer-btn-download">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                                    <span>Descargar</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Flyer 2 Fecha 5 -->
+                        <div class="flyer-card">
+                            <div class="flyer-img-wrapper" onclick="openLightbox('assets/fixture-sab10-oct/fixture-2-sab-10.png', 'Fixture Oficial Fecha 5 - Rol de Partidos 2 (Sábado 10 de Octubre)')">
+                                <img src="assets/fixture-sab10-oct/fixture-2-sab-10.png" alt="Fixture Fecha 5 - Rol de Partidos 2" class="flyer-img" loading="lazy">
+                                <div class="flyer-overlay">
+                                    <div class="flyer-overlay-btn">
+                                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                                    </div>
+                                    <span>Ver en Grande</span>
+                                </div>
+                            </div>
+                            <div class="flyer-info">
+                                <div>
+                                    <h4>Rol de Partidos 2</h4>
+                                    <p>Canchas 1 y 2 • 3:50 P.M. a 5:40 P.M.</p>
+                                </div>
+                                <a href="assets/fixture-sab10-oct/fixture-2-sab-10.png" download="Fixture-2-Fecha5-Sabado-10-Octubre.png" class="flyer-btn-download">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                                    <span>Descargar</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Flyer 3 Fecha 5 -->
+                        <div class="flyer-card">
+                            <div class="flyer-img-wrapper" onclick="openLightbox('assets/fixture-sab10-oct/fixture-3-sab-10.png', 'Fixture Oficial Fecha 5 - Rol de Partidos 3 (Sábado 10 de Octubre)')">
+                                <img src="assets/fixture-sab10-oct/fixture-3-sab-10.png" alt="Fixture Fecha 5 - Rol de Partidos 3" class="flyer-img" loading="lazy">
+                                <div class="flyer-overlay">
+                                    <div class="flyer-overlay-btn">
+                                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                                    </div>
+                                    <span>Ver en Grande</span>
+                                </div>
+                            </div>
+                            <div class="flyer-info">
+                                <div>
+                                    <h4>Rol de Partidos 3</h4>
+                                    <p>Canchas 1 y 2 • 6:35 P.M. a 8:25 P.M.</p>
+                                </div>
+                                <a href="assets/fixture-sab10-oct/fixture-3-sab-10.png" download="Fixture-3-Fecha5-Sabado-10-Octubre.png" class="flyer-btn-download">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                                    <span>Descargar</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Flyer 4 Fecha 5 -->
+                        <div class="flyer-card">
+                            <div class="flyer-img-wrapper" onclick="openLightbox('assets/fixture-sab10-oct/fixture-4-sab-10.png', 'Fixture Oficial Fecha 5 - Rol de Partidos 4 y Descansos (Sábado 10 de Octubre)')">
+                                <img src="assets/fixture-sab10-oct/fixture-4-sab-10.png" alt="Fixture Fecha 5 - Rol de Partidos 4 y Descansos" class="flyer-img" loading="lazy">
+                                <div class="flyer-overlay">
+                                    <div class="flyer-overlay-btn">
+                                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                                    </div>
+                                    <span>Ver en Grande</span>
+                                </div>
+                            </div>
+                            <div class="flyer-info">
+                                <div>
+                                    <h4>Rol de Partidos 4 & Descansos</h4>
+                                    <p>Cancha 2 (8:25 P.M.) • Promociones que descansan</p>
+                                </div>
+                                <a href="assets/fixture-sab10-oct/fixture-4-sab-10.png" download="Fixture-4-Fecha5-Sabado-10-Octubre.png" class="flyer-btn-download">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                                    <span>Descargar</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==============================================
+                     PANEL FECHA 4 (SÁBADO 26 DE SETIEMBRE)
+                     ============================================== -->
+                <div class="fecha-panel" id="panel-fecha-4">
+                    <div class="fecha-header-banner">
+                        <div>
+                            <h3>Fecha 4: Sábado 26 de Setiembre de 2026</h3>
+                            <p>Cuarta jornada oficial disputada en el complejo Mi Barrunto (Canchas 1 y 2).</p>
+                        </div>
+                        <span class="fecha-status-pill status-completed">Disputada</span>
+                    </div>
+
+                    <div class="flyers-grid">
+                        <!-- Flyer 1 Fecha 4 -->
+                        <div class="flyer-card">
+                            <div class="flyer-img-wrapper" onclick="openLightbox('assets/fixture-sab26/fixture-2-sab-26.jpeg', 'Fixture Oficial Fecha 4 - Rol de Partidos 1 (Sábado 26 de Setiembre)')">
+                                <img src="assets/fixture-sab26/fixture-2-sab-26.jpeg" alt="Fixture Fecha 4 - Rol de Partidos 1" class="flyer-img" loading="lazy">
+                                <div class="flyer-overlay">
+                                    <div class="flyer-overlay-btn">
+                                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                                    </div>
+                                    <span>Ver en Grande</span>
+                                </div>
+                            </div>
+                            <div class="flyer-info">
+                                <div>
+                                    <h4>Rol de Partidos 1</h4>
+                                    <p>Canchas 1 y 2 • 2:00 P.M. a 3:50 P.M.</p>
+                                </div>
+                                <a href="assets/fixture-sab26/fixture-2-sab-26.jpeg" download="Fixture-1-Fecha4-Sabado-26-Setiembre.jpeg" class="flyer-btn-download">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                                    <span>Descargar</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Flyer 2 Fecha 4 -->
+                        <div class="flyer-card">
+                            <div class="flyer-img-wrapper" onclick="openLightbox('assets/fixture-sab26/fixture-1-sab-26.jpeg', 'Fixture Oficial Fecha 4 - Rol de Partidos 2 (Sábado 26 de Setiembre)')">
+                                <img src="assets/fixture-sab26/fixture-1-sab-26.jpeg" alt="Fixture Fecha 4 - Rol de Partidos 2" class="flyer-img" loading="lazy">
+                                <div class="flyer-overlay">
+                                    <div class="flyer-overlay-btn">
+                                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                                    </div>
+                                    <span>Ver en Grande</span>
+                                </div>
+                            </div>
+                            <div class="flyer-info">
+                                <div>
+                                    <h4>Rol de Partidos 2</h4>
+                                    <p>Canchas 1 y 2 • 3:50 P.M. a 5:40 P.M.</p>
+                                </div>
+                                <a href="assets/fixture-sab26/fixture-1-sab-26.jpeg" download="Fixture-2-Fecha4-Sabado-26-Setiembre.jpeg" class="flyer-btn-download">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                                    <span>Descargar</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Flyer 3 Fecha 4 -->
+                        <div class="flyer-card">
+                            <div class="flyer-img-wrapper" onclick="openLightbox('assets/fixture-sab26/fixture-3-sab-26.jpeg', 'Fixture Oficial Fecha 4 - Rol de Partidos 3 y Descansos (Sábado 26 de Setiembre)')">
+                                <img src="assets/fixture-sab26/fixture-3-sab-26.jpeg" alt="Fixture Fecha 4 - Rol de Partidos 3 y Descansos" class="flyer-img" loading="lazy">
+                                <div class="flyer-overlay">
+                                    <div class="flyer-overlay-btn">
+                                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                                    </div>
+                                    <span>Ver en Grande</span>
+                                </div>
+                            </div>
+                            <div class="flyer-info">
+                                <div>
+                                    <h4>Rol de Partidos 3 & Descansos</h4>
+                                    <p>Canchas 1 y 2 (6:35 a 7:30 P.M.) • Promociones que descansan</p>
+                                </div>
+                                <a href="assets/fixture-sab26/fixture-3-sab-26.jpeg" download="Fixture-3-Fecha4-Sabado-26-Setiembre.jpeg" class="flyer-btn-download">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                                    <span>Descargar</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==============================================
+                     PANEL FECHA 3 (SÁBADO 19 DE SETIEMBRE)
+                     ============================================== -->
+                <div class="fecha-panel" id="panel-fecha-3">
                     <div class="fecha-header-banner">
                         <div>
                             <h3>Fecha 3: Sábado 19 de Setiembre de 2026</h3>
                             <p>Tercera jornada oficial disputada en el complejo Mi Barrunto (Canchas 1 y 2).</p>
                         </div>
-                        <span class="fecha-status-pill status-latest">Jornada Más Reciente</span>
+                        <span class="fecha-status-pill status-completed">Disputada</span>
                     </div>
 
                     <div class="flyers-grid">
@@ -944,7 +1231,7 @@
                 <div class="section-header-champ">
                     <span class="section-tag">Clasificación y Puntajes</span>
                     <h2>Tabla de Posiciones Oficial 2026</h2>
-                    <p>Puntajes acumulados y estadísticas oficiales hasta el día de hoy (Fecha 3) para todas las categorías del campeonato ASECLARET.</p>
+                    <p>Puntajes acumulados y estadísticas oficiales hasta el día de hoy (Fecha 4) para todas las categorías del campeonato ASECLARET.</p>
                 </div>
 
                 <!-- Banner Informativo con Indicador en Vivo -->
@@ -978,8 +1265,8 @@
                             <h3 class="standing-card-title">Categoría Veteranos</h3>
                             <span class="standing-card-badge badge-veteranos">Veteranos</span>
                         </div>
-                        <div class="standing-img-wrapper" onclick="openLightbox('assets/tabla-final-2026/tabla-pos-veteranos.jpeg', 'Tabla de Posiciones Oficial 2026 - Categoría Veteranos')">
-                            <img src="assets/tabla-final-2026/tabla-pos-veteranos.jpeg" alt="Tabla de Posiciones Veteranos" class="standing-img" loading="lazy">
+                        <div class="standing-img-wrapper" onclick="openLightbox('assets/tabla-final-2026/tabla-pos-veteranos.png', 'Tabla de Posiciones Oficial 2026 - Categoría Veteranos')">
+                            <img src="assets/tabla-final-2026/tabla-pos-veteranos.png" alt="Tabla de Posiciones Veteranos" class="standing-img" loading="lazy">
                             <div class="standing-overlay">
                                 <div class="standing-overlay-icon">
                                     <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -990,9 +1277,9 @@
                         <div class="standing-card-footer">
                             <div class="standing-footer-info">
                                 <strong>Puntajes Oficiales</strong>
-                                <span>Hasta la Fecha 3 (Hoy)</span>
+                                <span>Hasta la Fecha 4 (Hoy)</span>
                             </div>
-                            <a href="assets/tabla-final-2026/tabla-pos-veteranos.jpeg" download="Tabla-Posiciones-Veteranos-ASECLARET-2026.jpeg" class="standing-btn-download">
+                            <a href="assets/tabla-final-2026/tabla-pos-veteranos.png" download="Tabla-Posiciones-Veteranos-ASECLARET-2026.png" class="standing-btn-download">
                                 <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
                                 <span>Descargar</span>
                             </a>
@@ -1005,8 +1292,8 @@
                             <h3 class="standing-card-title">Categoría Máster</h3>
                             <span class="standing-card-badge badge-master">Máster</span>
                         </div>
-                        <div class="standing-img-wrapper" onclick="openLightbox('assets/tabla-final-2026/tabla-pos-master.jpeg', 'Tabla de Posiciones Oficial 2026 - Categoría Máster')">
-                            <img src="assets/tabla-final-2026/tabla-pos-master.jpeg" alt="Tabla de Posiciones Máster" class="standing-img" loading="lazy">
+                        <div class="standing-img-wrapper" onclick="openLightbox('assets/tabla-final-2026/tabla-pos-master.png', 'Tabla de Posiciones Oficial 2026 - Categoría Máster')">
+                            <img src="assets/tabla-final-2026/tabla-pos-master.png" alt="Tabla de Posiciones Máster" class="standing-img" loading="lazy">
                             <div class="standing-overlay">
                                 <div class="standing-overlay-icon">
                                     <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -1017,9 +1304,9 @@
                         <div class="standing-card-footer">
                             <div class="standing-footer-info">
                                 <strong>Puntajes Oficiales</strong>
-                                <span>Hasta la Fecha 3 (Hoy)</span>
+                                <span>Hasta la Fecha 4 (Hoy)</span>
                             </div>
-                            <a href="assets/tabla-final-2026/tabla-pos-master.jpeg" download="Tabla-Posiciones-Master-ASECLARET-2026.jpeg" class="standing-btn-download">
+                            <a href="assets/tabla-final-2026/tabla-pos-master.png" download="Tabla-Posiciones-Master-ASECLARET-2026.png" class="standing-btn-download">
                                 <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
                                 <span>Descargar</span>
                             </a>
@@ -1032,8 +1319,8 @@
                             <h3 class="standing-card-title">Categoría Senior</h3>
                             <span class="standing-card-badge badge-senior">Senior</span>
                         </div>
-                        <div class="standing-img-wrapper" onclick="openLightbox('assets/tabla-final-2026/tabla-pos-senior.jpeg', 'Tabla de Posiciones Oficial 2026 - Categoría Senior')">
-                            <img src="assets/tabla-final-2026/tabla-pos-senior.jpeg" alt="Tabla de Posiciones Senior" class="standing-img" loading="lazy">
+                        <div class="standing-img-wrapper" onclick="openLightbox('assets/tabla-final-2026/tabla-pos-senior.png', 'Tabla de Posiciones Oficial 2026 - Categoría Senior')">
+                            <img src="assets/tabla-final-2026/tabla-pos-senior.png" alt="Tabla de Posiciones Senior" class="standing-img" loading="lazy">
                             <div class="standing-overlay">
                                 <div class="standing-overlay-icon">
                                     <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -1044,9 +1331,9 @@
                         <div class="standing-card-footer">
                             <div class="standing-footer-info">
                                 <strong>Puntajes Oficiales</strong>
-                                <span>Hasta la Fecha 3 (Hoy)</span>
+                                <span>Hasta la Fecha 4 (Hoy)</span>
                             </div>
-                            <a href="assets/tabla-final-2026/tabla-pos-senior.jpeg" download="Tabla-Posiciones-Senior-ASECLARET-2026.jpeg" class="standing-btn-download">
+                            <a href="assets/tabla-final-2026/tabla-pos-senior.png" download="Tabla-Posiciones-Senior-ASECLARET-2026.png" class="standing-btn-download">
                                 <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
                                 <span>Descargar</span>
                             </a>
@@ -1059,8 +1346,8 @@
                             <h3 class="standing-card-title">Categoría Libre - Serie A</h3>
                             <span class="standing-card-badge badge-libre">Libre A</span>
                         </div>
-                        <div class="standing-img-wrapper" onclick="openLightbox('assets/tabla-final-2026/tabla-pos-libre-a.jpeg', 'Tabla de Posiciones Oficial 2026 - Libre Serie A')">
-                            <img src="assets/tabla-final-2026/tabla-pos-libre-a.jpeg" alt="Tabla de Posiciones Libre Serie A" class="standing-img" loading="lazy">
+                        <div class="standing-img-wrapper" onclick="openLightbox('assets/tabla-final-2026/tabla-pos-libre-a.png', 'Tabla de Posiciones Oficial 2026 - Libre Serie A')">
+                            <img src="assets/tabla-final-2026/tabla-pos-libre-a.png" alt="Tabla de Posiciones Libre Serie A" class="standing-img" loading="lazy">
                             <div class="standing-overlay">
                                 <div class="standing-overlay-icon">
                                     <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -1071,9 +1358,9 @@
                         <div class="standing-card-footer">
                             <div class="standing-footer-info">
                                 <strong>Puntajes Oficiales</strong>
-                                <span>Hasta la Fecha 3 (Hoy)</span>
+                                <span>Hasta la Fecha 4 (Hoy)</span>
                             </div>
-                            <a href="assets/tabla-final-2026/tabla-pos-libre-a.jpeg" download="Tabla-Posiciones-Libre-SerieA-ASECLARET-2026.jpeg" class="standing-btn-download">
+                            <a href="assets/tabla-final-2026/tabla-pos-libre-a.png" download="Tabla-Posiciones-Libre-SerieA-ASECLARET-2026.png" class="standing-btn-download">
                                 <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
                                 <span>Descargar</span>
                             </a>
@@ -1086,8 +1373,8 @@
                             <h3 class="standing-card-title">Categoría Libre - Serie B</h3>
                             <span class="standing-card-badge badge-libre">Libre B</span>
                         </div>
-                        <div class="standing-img-wrapper" onclick="openLightbox('assets/tabla-final-2026/tabla-pos-libre-b.jpeg', 'Tabla de Posiciones Oficial 2026 - Libre Serie B')">
-                            <img src="assets/tabla-final-2026/tabla-pos-libre-b.jpeg" alt="Tabla de Posiciones Libre Serie B" class="standing-img" loading="lazy">
+                        <div class="standing-img-wrapper" onclick="openLightbox('assets/tabla-final-2026/tabla-pos-libre-b.png', 'Tabla de Posiciones Oficial 2026 - Libre Serie B')">
+                            <img src="assets/tabla-final-2026/tabla-pos-libre-b.png" alt="Tabla de Posiciones Libre Serie B" class="standing-img" loading="lazy">
                             <div class="standing-overlay">
                                 <div class="standing-overlay-icon">
                                     <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -1098,9 +1385,9 @@
                         <div class="standing-card-footer">
                             <div class="standing-footer-info">
                                 <strong>Puntajes Oficiales</strong>
-                                <span>Hasta la Fecha 3 (Hoy)</span>
+                                <span>Hasta la Fecha 4 (Hoy)</span>
                             </div>
-                            <a href="assets/tabla-final-2026/tabla-pos-libre-b.jpeg" download="Tabla-Posiciones-Libre-SerieB-ASECLARET-2026.jpeg" class="standing-btn-download">
+                            <a href="assets/tabla-final-2026/tabla-pos-libre-b.png" download="Tabla-Posiciones-Libre-SerieB-ASECLARET-2026.png" class="standing-btn-download">
                                 <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
                                 <span>Descargar</span>
                             </a>
@@ -1113,8 +1400,8 @@
                             <h3 class="standing-card-title">Categoría Benjamines - Serie A</h3>
                             <span class="standing-card-badge badge-benjamines">Benjamines A</span>
                         </div>
-                        <div class="standing-img-wrapper" onclick="openLightbox('assets/tabla-final-2026/tabla-benjamines-a.jpeg', 'Tabla de Posiciones Oficial 2026 - Benjamines Serie A')">
-                            <img src="assets/tabla-final-2026/tabla-benjamines-a.jpeg" alt="Tabla de Posiciones Benjamines Serie A" class="standing-img" loading="lazy">
+                        <div class="standing-img-wrapper" onclick="openLightbox('assets/tabla-final-2026/tabla-benjamines-a.png', 'Tabla de Posiciones Oficial 2026 - Benjamines Serie A')">
+                            <img src="assets/tabla-final-2026/tabla-benjamines-a.png" alt="Tabla de Posiciones Benjamines Serie A" class="standing-img" loading="lazy">
                             <div class="standing-overlay">
                                 <div class="standing-overlay-icon">
                                     <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -1125,9 +1412,9 @@
                         <div class="standing-card-footer">
                             <div class="standing-footer-info">
                                 <strong>Puntajes Oficiales</strong>
-                                <span>Hasta la Fecha 3 (Hoy)</span>
+                                <span>Hasta la Fecha 4 (Hoy)</span>
                             </div>
-                            <a href="assets/tabla-final-2026/tabla-benjamines-a.jpeg" download="Tabla-Posiciones-Benjamines-SerieA-ASECLARET-2026.jpeg" class="standing-btn-download">
+                            <a href="assets/tabla-final-2026/tabla-benjamines-a.png" download="Tabla-Posiciones-Benjamines-SerieA-ASECLARET-2026.png" class="standing-btn-download">
                                 <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
                                 <span>Descargar</span>
                             </a>
@@ -1140,8 +1427,8 @@
                             <h3 class="standing-card-title">Categoría Benjamines - Serie B</h3>
                             <span class="standing-card-badge badge-benjamines">Benjamines B</span>
                         </div>
-                        <div class="standing-img-wrapper" onclick="openLightbox('assets/tabla-final-2026/tabla-benjamines-b.jpeg', 'Tabla de Posiciones Oficial 2026 - Benjamines Serie B')">
-                            <img src="assets/tabla-final-2026/tabla-benjamines-b.jpeg" alt="Tabla de Posiciones Benjamines Serie B" class="standing-img" loading="lazy">
+                        <div class="standing-img-wrapper" onclick="openLightbox('assets/tabla-final-2026/tabla-benjamines-b.png', 'Tabla de Posiciones Oficial 2026 - Benjamines Serie B')">
+                            <img src="assets/tabla-final-2026/tabla-benjamines-b.png" alt="Tabla de Posiciones Benjamines Serie B" class="standing-img" loading="lazy">
                             <div class="standing-overlay">
                                 <div class="standing-overlay-icon">
                                     <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -1152,9 +1439,9 @@
                         <div class="standing-card-footer">
                             <div class="standing-footer-info">
                                 <strong>Puntajes Oficiales</strong>
-                                <span>Hasta la Fecha 3 (Hoy)</span>
+                                <span>Hasta la Fecha 4 (Hoy)</span>
                             </div>
-                            <a href="assets/tabla-final-2026/tabla-benjamines-b.jpeg" download="Tabla-Posiciones-Benjamines-SerieB-ASECLARET-2026.jpeg" class="standing-btn-download">
+                            <a href="assets/tabla-final-2026/tabla-benjamines-b.png" download="Tabla-Posiciones-Benjamines-SerieB-ASECLARET-2026.png" class="standing-btn-download">
                                 <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
                                 <span>Descargar</span>
                             </a>
@@ -1469,7 +1756,7 @@
     <!-- Scripts -->
     <script src="script.js"></script>
     <script>
-        // 1. Selector interactivo de Jornadas (Fechas 1, 2 y 3)
+        // 1. Selector interactivo de Jornadas (Fechas 1 a 6)
         const fechaTabs = document.querySelectorAll('.fecha-tab-btn');
         const fechaPanels = document.querySelectorAll('.fecha-panel');
 
